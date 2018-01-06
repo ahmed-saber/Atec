@@ -46,12 +46,15 @@
 
             for (var i=0; i < aArray.length; i++) {
                 var theID = aArray[i];
-                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-                var divHeight = $(theID).height(); // get the height of the div in question
-                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                    $("a[href='" + theID + "']").addClass("nav-active");
-                } else {
-                    $("a[href='" + theID + "']").removeClass("nav-active");
+                var target = $(theID);
+                if(target.length){
+                    var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+                    var divHeight = $(theID).height(); // get the height of the div in question
+                    if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                        $("a[href='" + theID + "']").addClass("nav-active");
+                    } else {
+                        $("a[href='" + theID + "']").removeClass("nav-active");
+                    }
                 }
             }
 
@@ -116,12 +119,21 @@
 
         // Contact form
         //=====================================================
-        $('input, textarea').blur(function() {
+        var txt = 'input[type="text"], input[type="email"], textarea';
+        $(txt).each(function(){
+            $(this).after('<div class="bar"/>');
+        });
+        $('.contact_form').on('focus',txt,function() {
             var $this = $(this);
-            if ($this.val())
+            $this.prev().addClass('focus');
+        }).on('blur',txt,function() {
+            var $this = $(this);
+            if ($this.val()){
                 $this.addClass('used');
-            else
+            }else{
                 $this.removeClass('used');
+                $this.prev().removeClass('focus');
+            }
         });
 
 

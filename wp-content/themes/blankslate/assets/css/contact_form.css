@@ -1,4 +1,4 @@
-.group {
+.wpforms-field {
 	position: relative; 
 	margin-bottom: 35px;
 }
@@ -24,7 +24,7 @@ input:focus, textarea:focus { outline: none; }
 
 /* Label */
 
-label {
+label.wpforms-field-label {
 	color: #fff;
 	font-size: 14px;
 	font-weight: normal;
@@ -40,13 +40,18 @@ label {
 
 /* active */
 
-input:focus ~ label, input.used ~ label, textarea:focus ~ label, textarea.used ~ label  {
+label.focus{
 	top: -20px;
-  -webkit-transform: scale(.75);
-          transform: scale(.75);
+	-webkit-transform: scale(.75);
+	transform: scale(.75);
 	padding: 0;
 	font-size: 14px;
 	color: #ccc;
+}
+
+label.wpforms-error{
+	color: red;
+	font-size: 0.8em;
 }
 
 
@@ -62,7 +67,7 @@ input:focus ~ label, input.used ~ label, textarea:focus ~ label, textarea.used ~
 	content: '';
 	height: 2px; 
 	width: 0;
-	bottom: 1px; 
+	top: 45px;
 	position: absolute;
 	background: #fff;
 	transition: all 0.4s cubic-bezier(0.16, 0.68, 0.43, 0.99);

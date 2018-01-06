@@ -231,4 +231,6 @@ $frontpage_id = get_option('page_on_front');
         </div>
     </div>
 </section>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/lightgallery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/animation.js" type="text/javascript"></script>
 <?php get_footer(); ?>

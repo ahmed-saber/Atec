@@ -73,6 +73,7 @@
         <div class="col col--12 col__md--4 col__lg--4"></div>
     </div>
 </div>
+<?php wp_footer(); ?>
 <!-- end container -->
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/jquery-1.11.2.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/slick.min.js"></script>
@@ -81,9 +82,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/ScrollMagic.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/animation.gsap.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/pushy.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/lightgallery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/animation.js" type="text/javascript"></script>
+
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js" type="text/javascript"></script>
-<?php wp_footer(); ?>
 </body>
 </html>
