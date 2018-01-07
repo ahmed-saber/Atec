@@ -1,7 +1,7 @@
 (function ($, window) {
     $(document).ready(function () {
         var controller = new ScrollMagic.Controller(),
-            menuLinks = $('.pushy-link'),
+            menuLinks = $('.menu-item'),
             anim1 = $('.anim1'),
             firstSec = $('.first_sec'),
             header = $('header'),

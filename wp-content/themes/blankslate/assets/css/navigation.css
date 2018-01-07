@@ -31,7 +31,7 @@ nav ul > li > ul a{
   font-size: .9em;
   padding: .5em .7em;
 }
-nav > ul ul li:last-child{
+nav ul ul li:last-child{
   border-radius: 0 0 5px 5px;
   overflow: hidden;
 }
@@ -53,20 +53,20 @@ nav > ul ul li:last-child{
   .tnlbc{
     display: inline-block;
   }
-  nav > ul{
+  nav ul{
     list-style:none;
     margin: 0;
   }
-  nav > ul > li{
+  nav ul > li{
     display: inline-block;
     position:relative;
   }
-  nav > ul a{
+  nav ul a{
     display:block;
     padding:38px 0 10px;
     margin: 0 15px;
   }
-  nav > ul a:before{
+  nav ul a:before{
     content: '';
     position: absolute;
     top: 0;
@@ -81,12 +81,12 @@ nav > ul ul li:last-child{
     -webkit-transition: all 0.3s cubic-bezier(0.16, 0.68, 0.43, 0.99);
     -o-transition: all 0.3s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   }
-  nav > ul a:hover:before{
+  nav ul a:hover:before{
     /*width: 100%;*/
   }
 
   /*--- DROPDOWN ---*/
-  nav > ul ul{
+  nav ul ul{
     background:#fff;
     background:rgba(255,255,255,0);
     list-style:none;
@@ -100,10 +100,10 @@ nav > ul ul li:last-child{
     left: auto;
     right: -9999px;
   }
-  nav > ul ul a{
+  nav ul ul a{
     white-space:nowrap;
   }
-  nav > ul > li:hover ul{
+  nav ul > li:hover ul{
     left:0;
     z-index: 10;
   }
@@ -112,15 +112,15 @@ nav > ul ul li:last-child{
     right: 0;
     z-index: 10;
   }
-  nav > ul > li a:hover, nav > ul > li a.nav-active{
+  nav ul > li a:hover, nav ul > li a.nav-active{
     color: #b7d234;
   }
-  nav > ul > li a.nav-active:before{
+  nav ul > li a.nav-active:before{
     box-shadow: 0 4px 0 #b7d234 inset;
     width: 100%;
   }
 
-  nav > ul > li:hover ul li a:hover{
+  nav ul > li:hover ul li a:hover{
     background:#171617;
     color: #fff;
   }
@@ -290,7 +290,7 @@ nav > ul ul li:last-child{
     padding-left: 0;
     padding-right: 15px;
   }
-  .pushy-submenu ul .pushy-link {
+  .pushy-submenu ul .menu-item {
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
   }
@@ -326,7 +326,7 @@ nav > ul ul li:last-child{
     max-height: 0;
     overflow: hidden;
   }
-  .pushy-submenu-closed .pushy-link {
+  .pushy-submenu-closed .menu-item {
     opacity: 0;
   }
 
@@ -336,7 +336,7 @@ nav > ul ul li:last-child{
   .pushy-submenu-open ul {
     max-height: 1000px;
   }
-  .pushy-submenu-open .pushy-link {
+  .pushy-submenu-open .menu-item {
     opacity: 1;
   }
   .pushy-submenu-open a::after, .pushy-right .pushy-submenu-open a::after {

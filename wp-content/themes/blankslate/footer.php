@@ -8,17 +8,12 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_horizontal.png" alt="">
                         </span>
                         <h1 class="sec_title"><span><?php _e('Get In'); ?></span> <?php _e('Touch'); ?></h1>
-                        <ul class="links_list">
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Affiliate</a></li>
-                            <li><a href="#">Our Location</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu(array(
+                            'menu' => 'Footer',
+                            'menu_class' => 'links_list'
+                        ));
+                        ?>
                         <span class="no-selection BG_text"><?php _e('contact'); ?></span>
                         <footer>
                             <p class="copyright"><?php _e('© Atec 2016 All Rights Reserved'); ?></p>

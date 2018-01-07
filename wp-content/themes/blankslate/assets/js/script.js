@@ -37,8 +37,7 @@
             e.preventDefault();
             $(this).toggleClass('is-active');
         });
-        $(".site-overlay, .pushy-link").on('click',function(e){
-            e.preventDefault();
+        $(".site-overlay, .menu-item").on('click',function(e){
             $('.hamburger').removeClass('is-active');
         });
     });

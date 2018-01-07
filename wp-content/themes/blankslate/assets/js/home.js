@@ -111,7 +111,7 @@
         // HOME PAGE ANIMATION
         var controller = new ScrollMagic.Controller(),
             iconsList = $('.icons_list'),
-            menuLinks = $('.pushy-link'),
+            menuLinks = $('.menu-item'),
             anim1 = $('.anim1'),
             firstSec = $('.first_sec'),
             header = $('header'),

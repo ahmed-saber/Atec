@@ -34,13 +34,18 @@
     </div>
     <!-- Pushy Menu -->
     <nav class="pushy pushy-left">
+        <?php if(is_front_page()){ ?>
         <ul class="clearfix">
-            <li class="pushy-link"><a href="#first_sec" class="nav-active">Home</a></li>
-            <li class="pushy-link"><a href="#second_sec">About</a></li>
-            <li class="pushy-link"><a href="#third_sec">Services</a></li>
-            <li class="pushy-link"><a href="#fourth_sec">Solutions</a></li>
-            <li class="pushy-link"><a href="#fifth_sec">Contact</a></li>
+            <li class="menu-item"><a href="#first_sec" class="nav-active"><?php _e('Home'); ?></a></li>
+            <li class="menu-item"><a href="#second_sec"><?php _e('About'); ?></a></li>
+            <li class="menu-item"><a href="#third_sec"><?php _e('Services'); ?></a></li>
+            <li class="menu-item"><a href="#fourth_sec"><?php _e('Solutions'); ?></a></li>
+            <li class="menu-item"><a href="#fifth_sec"><?php _e('Contact'); ?></a></li>
         </ul>
+        <?php }else{
+            wp_nav_menu();
+        }
+        ?>
         <div class="social">
             <a href="<?php echo $GLOBALS['cgv']['instagram'] ?>" class="instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
