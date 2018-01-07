@@ -43,7 +43,10 @@
             <li class="menu-item"><a href="#fifth_sec"><?php _e('Contact'); ?></a></li>
         </ul>
         <?php }else{
-            wp_nav_menu();
+            wp_nav_menu(array(
+                'menu' => 'Main Menu',
+                'menu_class' => 'clearfix'
+            ));
         }
         ?>
         <div class="social">
