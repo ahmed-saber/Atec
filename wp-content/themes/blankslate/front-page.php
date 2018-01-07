@@ -207,4 +207,6 @@ $frontpage_id = get_option('page_on_front');
         </div>
     </div>
 </section>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/home.js" type="text/javascript" defer></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/projects.js" type="text/javascript" defer></script>
 <?php get_footer(); ?>

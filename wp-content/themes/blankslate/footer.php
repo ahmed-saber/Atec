@@ -83,7 +83,9 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/animation.gsap.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/pushy.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/lightgallery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/animation.js" type="text/javascript"></script>
+<?php if(!is_front_page()){ ?>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/animation.js" type="text/javascript"></script>
+<?php } ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>

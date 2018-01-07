@@ -6,7 +6,7 @@ if (has_post_thumbnail($post->ID)){
 }
 ?>
 <!--first section-->
-<section class="block-st1" style="background-image:url('<?php echo $image[0]; ?>')">
+<section class="block-st1 firstSec" style="background-image:url('<?php echo $image[0]; ?>')">
     <div class="logo_container anim1 hidden">
         <span class="logo"></span>
         <span class="no-selection BG_text">atec</span>

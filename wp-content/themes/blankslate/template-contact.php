@@ -6,7 +6,7 @@ if (has_post_thumbnail($post->ID)){
 }
 ?>
 <!--first section-->
-<section class="block-st1" style="background-image:url('<?php echo $image[0]; ?>')">
+<section class="block-st1 firstSec" style="background-image:url('<?php echo $image[0]; ?>')">
     <div class="logo_container anim1 hidden">
         <span class="logo"></span>
         <span class="no-selection BG_text"><?php _e('atec'); ?></span>
@@ -21,14 +21,16 @@ if (has_post_thumbnail($post->ID)){
 </section>
 <!--second section-->
 <section class="block-st3">
-    <div class="flex">
+    <div class="flex stagger_3">
         <div class="col col--12 col__md--6 col__lg--6">
-            <img src="<?php the_field('contact_image'); ?>" class="img-w" />
+            <img src="<?php the_field('contact_image'); ?>" class="img-w target" />
         </div>
         <div class="col col--12 col__md--6 col__lg--6 contactsection">
-            <?php echo get_post_field('post_content', $post_id); ?>
-            <span class="no-selection BG_text"><?php _e('contact'); ?></span>
-            <button type="button" class="btn transition" onclick="window.location = '#fifth_sec'"><?php _e('Send Us Mail'); ?></button>
+            <div class="target">
+                <?php echo get_post_field('post_content', $post_id); ?>
+                <span class="no-selection BG_text"><?php _e('contact'); ?></span>
+                <button type="button" class="btn transition" onclick="window.location = '#fifth_sec'"><?php _e('Send Us Mail'); ?></button>
+            </div>
         </div>
     </div>
 </section>
