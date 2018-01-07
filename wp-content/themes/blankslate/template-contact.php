@@ -39,15 +39,15 @@ if (has_post_thumbnail($post->ID)){
         </div>
     </aside>
     <div class="title-st1">
-        <h2>Get In Touch</h2>
-        <h1>Contacts</h1>
+        <h2><?php the_field('sub_title'); ?></h2>
+        <h1><?php the_field('title'); ?></h1>
     </div>
 </section>
 <!--second section-->
 <section class="sec block-st3 animate-blocks">
     <div class="flex">
         <div class="col col--12 col__md--6 col__lg--6">
-            <img src="<?php the_field('contact_image',$frontpage_id); ?>" class="img-w" />
+            <img src="<?php the_field('contact_image'); ?>" class="img-w" />
         </div>
         <div class="col col--12 col__md--6 col__lg--6 contactsection">
             <?php the_field('contactus'); ?>
