@@ -36,7 +36,7 @@
     <nav class="pushy pushy-left">
         <?php if(is_front_page()){ ?>
         <ul class="clearfix">
-            <li class="menu-item"><a href="#first_sec" class="nav-active"><?php _e('Home'); ?></a></li>
+            <li class="menu-item current-menu-item"><a href="#first_sec"><?php _e('Home'); ?></a></li>
             <li class="menu-item"><a href="#second_sec"><?php _e('About'); ?></a></li>
             <li class="menu-item"><a href="#third_sec"><?php _e('Services'); ?></a></li>
             <li class="menu-item"><a href="#fourth_sec"><?php _e('Solutions'); ?></a></li>

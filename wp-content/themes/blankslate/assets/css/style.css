@@ -1053,6 +1053,43 @@ button.slick-prev:hover {
     right: 35px;
 }
 
+/* ITEMS IN THE SERVICES PAGE */
+.item-st1{
+    margin-bottom: 50px;
+}
+.item-st1 .item-st1-desc{
+    background-color: #a7c02f;
+    padding: 7%;
+    color: #fff;
+    margin-left: -30%;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.item-st1 .item-st1-desc:hover{
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+.item-st1 .item-st1-desc a{
+    color: #fff;
+}
+.item-st1 .item-st1-desc a:hover{
+    color: #849a1c;
+}
+.item-st1 .item-st1-desc p{
+    margin: 0;
+    font-size: 0.9em;
+}
+.item-st1.odd .item-st1-desc{
+    position: relative;
+    background-color: #1c1c1c;
+    margin-left: 0;
+    margin-right: -30%;
+    z-index: 1;
+}
+
 /*-------------------------------------------------------
    footer
 -------------------------------------------------------*/
@@ -1165,5 +1202,9 @@ footer .social a:hover {
     }
     .lg-toolbar {
         top: 60px !important;
+    }
+    .item-st1 .item-st1-desc, .item-st1.odd .item-st1-desc{
+        margin-right: 0;
+        margin-left: 0;
     }
 }

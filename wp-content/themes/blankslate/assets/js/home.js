@@ -46,18 +46,18 @@
                     var divPos = $(theID).offset().top; // get the offset of the div from the top of page
                     var divHeight = $(theID).height(); // get the height of the div in question
                     if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                        $("a[href='" + theID + "']").addClass("nav-active");
+                        $("a[href='" + theID + "']").parent().addClass("current-menu-item");
                     } else {
-                        $("a[href='" + theID + "']").removeClass("nav-active");
+                        $("a[href='" + theID + "']").parent().removeClass("current-menu-item");
                     }
                 }
             }
 
             if (windowPos + windowHeight == docHeight) {
-                if (!$("nav li:last-child a").hasClass("nav-active")) {
-                    var navActiveCurrent = $(".nav-active").attr("href");
-                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
-                    $("nav li:last-child a").addClass("nav-active");
+                if (!$("nav li:last-child a").parent().hasClass("current-menu-item")) {
+                    var navActiveCurrent = $(".current-menu-item a").attr("href");
+                    $("a[href='" + navActiveCurrent + "']").parent().removeClass("current-menu-item");
+                    $("nav li:last-child a").parent().addClass("current-menu-item");
                 }
             }
         });

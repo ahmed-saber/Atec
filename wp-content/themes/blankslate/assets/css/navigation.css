@@ -112,10 +112,10 @@ nav ul ul li:last-child{
     right: 0;
     z-index: 10;
   }
-  nav ul > li a:hover, nav ul > li a.nav-active{
+  nav ul > li a:hover, nav ul > li.current-menu-item a{
     color: #b7d234;
   }
-  nav ul > li a.nav-active:before{
+  nav ul > li.current-menu-item a:before{
     box-shadow: 0 4px 0 #b7d234 inset;
     width: 100%;
   }
@@ -188,7 +188,7 @@ nav ul ul li:last-child{
     background-color: #292929;
     color: #b7d333;
   }
-  .pushy a.nav-active{
+  .pushy .current-menu-item a{
     box-shadow:3px 0 0 #b7d333 inset;
     color:#b7d333;
     background-color: #202020;
