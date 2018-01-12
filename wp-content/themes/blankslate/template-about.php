@@ -29,7 +29,7 @@ if (has_post_thumbnail($post->ID)){
         <div class="flex">
             <div class="col col--12 col__md--12 col__lg--12">
                 <div class="content-block stagger_1">
-                    <?php echo get_post_field('post_content', $post_id); ?>
+                    <?php echo echo wpautop($post->post_content); ?>
                 </div>
             </div>
         </div>

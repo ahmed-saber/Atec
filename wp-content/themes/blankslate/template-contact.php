@@ -27,7 +27,7 @@ if (has_post_thumbnail($post->ID)){
         </div>
         <div class="col col--12 col__md--6 col__lg--6 contactsection">
             <div class="target">
-                <?php echo get_post_field('post_content', $post_id); ?>
+                <?php echo echo wpautop($post->post_content); ?>
                 <span class="no-selection BG_text"><?php _e('contact'); ?></span>
                 <button type="button" class="btn transition" onclick="window.location = '#fifth_sec'"><?php _e('Send Us Mail'); ?></button>
             </div>
