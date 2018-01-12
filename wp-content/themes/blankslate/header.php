@@ -76,10 +76,10 @@
         </div>
     </nav>
 </header>
-<div class="lang_count lang1 hidden">
+<!--div class="lang_count lang1 hidden">
     <select name="lang">
         <option value="">Eng</option>
         <option value="">Ar</option>
     </select>
-</div>
+</div-->
 <div class="container">
