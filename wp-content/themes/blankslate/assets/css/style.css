@@ -101,6 +101,22 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition-duration: 2s;
 }
 
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
 .max_w {
     max-width: 1024px;
     margin: auto;
@@ -109,6 +125,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-w{
     width: 100%;
+}
+
+.fr{
+    float: right;
+}
+
+.fl{
+    float: left;
 }
 
 .small {
@@ -1094,6 +1118,12 @@ button.slick-prev:hover {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
+}
+
+/* SINGLE PAGE */
+.entry-meta{
+    font-size: 0.8em;
+    color: #aaa;
 }
 
 /*-------------------------------------------------------
