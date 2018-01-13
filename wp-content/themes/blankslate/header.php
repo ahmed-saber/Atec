@@ -34,20 +34,11 @@
     </div>
     <!-- Pushy Menu -->
     <nav class="pushy pushy-left">
-        <?php if(is_front_page()){ ?>
-        <ul class="clearfix">
-            <li class="menu-item current-menu-item"><a href="#first_sec"><?php _e('Home'); ?></a></li>
-            <li class="menu-item"><a href="#second_sec"><?php _e('About'); ?></a></li>
-            <li class="menu-item"><a href="#third_sec"><?php _e('Services'); ?></a></li>
-            <li class="menu-item"><a href="#fourth_sec"><?php _e('Solutions'); ?></a></li>
-            <li class="menu-item"><a href="#fifth_sec"><?php _e('Contact'); ?></a></li>
-        </ul>
-        <?php }else{
-            wp_nav_menu(array(
-                'menu' => 'Main Menu',
-                'menu_class' => 'clearfix'
-            ));
-        }
+        <?php 
+        wp_nav_menu(array(
+            'menu' => 'Main Menu',
+            'menu_class' => 'clearfix'
+        ));
         ?>
         <div class="social">
             <a href="<?php echo $GLOBALS['cgv']['instagram'] ?>" class="instagram">
