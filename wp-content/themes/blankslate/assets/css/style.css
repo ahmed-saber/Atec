@@ -1089,6 +1089,12 @@ button.slick-prev:hover {
     margin-right: -30%;
     z-index: 1;
 }
+.item-st1.odd .item-st1-desc-holder{
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+}
 
 /*-------------------------------------------------------
    footer
@@ -1206,5 +1212,11 @@ footer .social a:hover {
     .item-st1 .item-st1-desc, .item-st1.odd .item-st1-desc{
         margin-right: 0;
         margin-left: 0;
+    }
+    .item-st1.odd .item-st1-desc-holder{
+        -webkit-box-ordinal-group: 0;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
     }
 }
