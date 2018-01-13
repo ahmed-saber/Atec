@@ -1,24 +1,12 @@
 <?php /* Template Name: Projects */ ?>
 <?php get_header(); ?>
 <?php
-if (has_post_thumbnail($post->ID)){
-    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
-}
+$contentHeaderData = '
+    <h2>'.get_field("sub_title").'</h2>
+    <h1>'.get_field("title").'</h1>
+';
+include('content-header.php');
 ?>
-<!--first section-->
-<section class="block-st1 firstSec" style="background-image:url('<?php echo $image[0]; ?>')">
-    <div class="logo_container anim1 hidden">
-        <span class="logo"></span>
-        <span class="no-selection BG_text">atec</span>
-    </div>
-    <?php
-    include('aside.php');
-    ?>
-    <div class="title-st1">
-        <h2><?php the_field('sub_title'); ?></h2>
-        <h1><?php the_field('title'); ?></h1>
-    </div>
-</section>
 <section id="third_sec" class="third_sec">
     <span class="no-selection BG_text"><?php _e('Projects'); ?></span>
     <div class="filters-button-container">

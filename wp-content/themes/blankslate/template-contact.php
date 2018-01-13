@@ -1,24 +1,13 @@
 <?php /* Template Name: Contact */ ?>
 <?php get_header(); ?>
 <?php
-if (has_post_thumbnail($post->ID)){
-    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
-}
+$contentHeaderData = '
+    <h2>'.get_field("sub_title").'</h2>
+    <h1>'.get_field("title").'</h1>
+    <!--button type="button" class="btn transition">Call to Action</button-->
+';
+include('content-header.php');
 ?>
-<!--first section-->
-<section class="block-st1 firstSec" style="background-image:url('<?php echo $image[0]; ?>')">
-    <div class="logo_container anim1 hidden">
-        <span class="logo"></span>
-        <span class="no-selection BG_text"><?php _e('atec'); ?></span>
-    </div>
-    <?php
-    include('aside.php');
-    ?>
-    <div class="title-st1">
-        <h2><?php the_field('sub_title'); ?></h2>
-        <h1><?php the_field('title'); ?></h1>
-    </div>
-</section>
 <!--second section-->
 <section class="block-st3">
     <div class="flex stagger_3">
@@ -27,7 +16,7 @@ if (has_post_thumbnail($post->ID)){
         </div>
         <div class="col col--12 col__md--6 col__lg--6 contactsection">
             <div class="target">
-                <?php echo echo wpautop($post->post_content); ?>
+                <?php echo wpautop($post->post_content); ?>
                 <span class="no-selection BG_text"><?php _e('contact'); ?></span>
                 <button type="button" class="btn transition" onclick="window.location = '#fifth_sec'"><?php _e('Send Us Mail'); ?></button>
             </div>

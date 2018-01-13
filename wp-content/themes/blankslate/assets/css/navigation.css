@@ -6,6 +6,9 @@ header{
   width: 100%;
   text-align: center;
 }
+.logged-in header{
+  top: 32px;
+}
 header .horiz_logo{
   padding: 10px;
   position: absolute;
