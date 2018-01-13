@@ -15,19 +15,5 @@
             }, 500);
 
         });
-
-
-        //// project gallery
-        $('.project_unit').on('click', function (e) {
-            e.preventDefault();
-            var projNum = $(this).data('project');
-            var theGallery = $('.gallery_' + projNum);
-            var theSelector = theGallery.find('li');
-            var $lg = theGallery.lightGallery({
-                selector: theSelector
-            });
-            theSelector.trigger('click');
-            $lg.data('lightGallery').slide(0);
-        });
     });
 })(window, jQuery);

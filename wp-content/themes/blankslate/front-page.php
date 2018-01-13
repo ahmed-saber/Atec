@@ -141,7 +141,7 @@ $frontpage_id = get_option('page_on_front');
             $terms = get_the_terms(get_the_ID(),'projects_types');
         ?>
             <div class="col col--12 col__md--3 col__lg--3 element-item all <?php echo $terms[0]->name; ?>">
-                <a data-category="<?php echo $terms[0]->name; ?>" data-project="<?php echo $index; ?>" class="project_unit" href="#">
+                <a data-category="<?php echo $terms[0]->name; ?>" data-project="<?php echo $index; ?>" class="project_unit" href="<?php echo get_permalink($post->post_parent); ?>">
                     <h3 class="proj_title transition"><?php the_title() ?></h3>
                     <span class="proj_img">
                         <img class="transition" src="<?php echo get_the_post_thumbnail_url($post->ID,'full'); ?>">
