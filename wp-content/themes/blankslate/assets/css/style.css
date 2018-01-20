@@ -1126,6 +1126,9 @@ button.slick-prev:hover {
 }
 
 /* News page */
+.type-news{
+    margin-bottom: 30px;
+}
 .item-st2{
     margin-bottom: 50px;
 }

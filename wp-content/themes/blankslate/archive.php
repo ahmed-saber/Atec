@@ -1,17 +1,28 @@
 <?php get_header(); ?>
-<section id="content" role="main">
-<header class="header">
-<h1 class="entry-title"><?php 
-if ( is_day() ) { printf( __( 'Daily Archives: %s', 'blankslate' ), get_the_time( get_option( 'date_format' ) ) ); }
-elseif ( is_month() ) { printf( __( 'Monthly Archives: %s', 'blankslate' ), get_the_time( 'F Y' ) ); }
-elseif ( is_year() ) { printf( __( 'Yearly Archives: %s', 'blankslate' ), get_the_time( 'Y' ) ); }
-else { _e( 'Archives', 'blankslate' ); }
-?></h1>
-</header>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'entry' ); ?>
-<?php endwhile; endif; ?>
-<?php get_template_part( 'nav', 'below' ); ?>
+<?php
+$contentHeaderData = '
+    <h1>'.get_the_title().'</h1>
+';
+include('content-header.php');
+?>
+<!--second section-->
+<section id="second_sec" class="sec second_sec">
+    <div class="max_w">
+        <div class="flex">
+            <div class="col col--12 col__md--8 col__lg--8">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <h1 class="entry-title mb-10" title="<?php the_title_attribute(); ?>"><a href="<?php echo get_permalink($post->post_parent); ?>"><?php the_title(); ?></a> <div class="fr"><?php edit_post_link(); ?></div></h1>
+                    <?php get_template_part('entry', 'meta'); ?>
+                    <?php get_template_part('entry', ( is_archive() || is_search() ? 'summary' : 'content')); ?>
+                </article>
+                <?php if (!post_password_required()) comments_template('',true); ?>
+                <?php endwhile; endif; ?>
+            </div>
+            <div class="col col--12 col__md--4 col__lg--4">
+                <?php get_sidebar(); ?>
+            </div>
+        </div>
+    </div>
 </section>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

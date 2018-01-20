@@ -44,14 +44,14 @@ include('content-header.php');
                                     }
                                     ?>
                                     <h2><?php the_title() ?></h2>
-                                    <p><?php  echo get_the_excerpt(); ?></p>
+                                    <p><?php echo get_the_excerpt(); ?></p>
                                     <hr>
                                     <section class="entry-meta mb-40 clearfix">
                                         <span class="author vcard"><?php _e('by'); ?> <?php echo get_the_author(); ?></span>
                                         <span class="entry-date fr"><?php the_time( get_option( 'date_format' ) ); ?></span>
                                     </section>
                                     <section class="clearfix">
-                                        <span class="entry-link fr"><a class="link" href="<?php echo get_permalink( $post->post_parent ); ?>"><?php _e('Read More'); ?> <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
+                                        <span class="entry-link fr"><a class="link" href="<?php echo get_permalink($post->post_parent); ?>"><?php _e('Read More'); ?> <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
                                     </section>
                                 </div>
                             </div>
