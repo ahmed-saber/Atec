@@ -39,7 +39,7 @@ include('content-header.php');
                                         <img src="<?php the_field('icon', $post->ID); ?>">
                                     </div>
                                     <h2><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php the_title() ?></a></h2>
-                                    <p><?php echo get_post_field('post_content', $post->ID); ?></p>
+                                    <p><?php  echo get_the_excerpt(); ?></p>
                                 </div>
                             </div>
 

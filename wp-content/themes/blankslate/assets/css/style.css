@@ -127,6 +127,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.img-h{
+    height: 100%;
+    max-width: 100%;
+}
+
 .fr{
     float: right;
 }
@@ -1120,10 +1125,108 @@ button.slick-prev:hover {
     order: -1;
 }
 
+/* News page */
+.item-st2{
+    margin-bottom: 50px;
+}
+.item-st2 .item-st2-img-holder{
+    padding: 0;
+}
+.item-st2 .item-st2-desc-holder{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.item-st2 .item-st2-desc{
+    padding: 7%;
+}
+.item-st2 .item-st2-desc .link{
+    color: #b7d333;
+}
+.item-st2 .item-st2-desc .link:hover{
+    color: #777;
+}
+.item-st2 .item-st2-desc .link i{
+    font-size: 1.3em;
+    vertical-align: middle;
+    margin-left:10px;
+}
+.item-st2 .item-st2-desc p{
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+.item-st2 .item-st2-desc hr{
+    margin-bottom: 20px;
+    background-color: #aaaaaa;
+    height: 1px;
+    border: 0;
+}
+
 /* SINGLE PAGE */
+.block-st9 h2{
+    color: #b7d333;
+    margin:0 0 60px;
+    text-transform: uppercase;
+}
+.item-st3{
+    margin-bottom: 20px;
+}
+.item-st3 img{
+    height: auto;
+    width: 100%;
+}
+.item-st3 p{
+    margin:0 0 10px;
+}
 .entry-meta{
     font-size: 0.8em;
     color: #aaa;
+}
+.entry-footer{
+    padding-top: 30px;
+}
+
+/* tags */
+.tags-st1 li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.tags-st1 li a{
+    display: inline-block;
+    background-color: #434343;
+    color: #aaaaaa;
+    padding: 4px 15px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+.tags-st1 li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* navigation */
+.navigation{
+    padding: 30px 0 100px;
+    text-align: center;
+    clear:both;
+}
+.navigation .first-link{
+    float: left;
+}
+.navigation .last-link{
+    float: right;
+}
+.navigation .first-link,.navigation .last-link{
+    text-transform:uppercase;
+}
+.navigation ul li{
+    display: inline-block;
+    padding: 5px;
+}
+.navigation a{
+    color: #fff;
+}
+.navigation .active a,.navigation a:hover{
+    color: #b7d333;
 }
 
 /*-------------------------------------------------------
