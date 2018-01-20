@@ -22,12 +22,9 @@
                 </div>
             </div>
             <div class="col col--12 col__md--6 col__lg--6 no_padd">
-                <!--div class="lang_count stagger_5">
-                    <select name="lang">
-                        <option value="">Eng</option>
-                        <option value="">Ar</option>
-                    </select>
-                </div-->
+                <div class="lang_count stagger_5">
+                    <?php echo qtranxf_generateLanguageSelectCode('dropdown','footer'); ?>
+                </div>
                 <div class="social stagger_5">
                     <a href="<?php echo $GLOBALS['cgv']['instagram'] ?>" class="instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
