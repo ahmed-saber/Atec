@@ -1,6 +1,10 @@
-.wpforms-field {
+.wpcf7-form p {
 	position: relative; 
 	margin-bottom: 35px;
+}
+
+.wpcf7-form p:last-child{
+	margin-bottom: 0;
 }
 
 input, textarea {
@@ -24,13 +28,12 @@ input:focus, textarea:focus { outline: none; }
 
 /* Label */
 
-label.wpforms-field-label {
+.wpcf7-form label {
 	color: #fff;
 	font-size: 14px;
 	font-weight: normal;
 	position: absolute;
 	pointer-events: none;
-	/*left: 5px;*/
 	padding: 0 15px;
 	top: 10px;
 	-webkit-transition:all 0.2s ease;
@@ -40,7 +43,7 @@ label.wpforms-field-label {
 
 /* active */
 
-label.focus{
+.wpcf7-form .focus label{
 	top: -20px;
 	-webkit-transform: scale(.75);
 	transform: scale(.75);
@@ -49,14 +52,20 @@ label.focus{
 	color: #ccc;
 }
 
-label.wpforms-error{
+span.wpcf7-not-valid-tip{
 	color: red;
-	font-size: 0.8em;
+	font-size: 0.8em !important;
+	margin: 5px 0;
 }
 
+div.wpcf7-validation-errors{
+	margin: 0 !important;
+}
 
 /* Underline */
-
+.bar{
+	position: relative;
+}
 .bar:after {
 	position: relative;
 	display: block;
@@ -67,7 +76,7 @@ label.wpforms-error{
 	content: '';
 	height: 2px; 
 	width: 0;
-	top: 45px;
+	top: 0px;
 	position: absolute;
 	background: #fff;
 	transition: all 0.4s cubic-bezier(0.16, 0.68, 0.43, 0.99);
@@ -83,7 +92,7 @@ label.wpforms-error{
 
 /* active */
 
-input:focus ~ .bar:before, input:focus ~ .bar:after ,textarea:focus ~ .bar:before, textarea:focus ~ .bar:after { width: 50%; }
+.focus .bar:before, .focus .bar:after { width: 50%; }
 
 
 /* Highlight */

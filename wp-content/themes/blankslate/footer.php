@@ -50,9 +50,11 @@
                     </a>
                 </div>
                 <div class="cover_img">
-                    <?php
-                    echo do_shortcode('[wpforms id="36"]');
-                    ?>
+                    <div class="contact_form">
+                        <?php
+                        echo do_shortcode('[contact-form-7 id="160" title="Contact form 1"]');
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>

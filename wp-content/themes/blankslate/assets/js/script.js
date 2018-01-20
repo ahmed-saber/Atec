@@ -18,18 +18,20 @@
         $(txt).each(function(){
             $(this).after('<div class="bar"/>');
         });
-        $('.contact_form').on('focus',txt,function() {
+        $('#wpcf7-f160-o1').on('focus',txt,function() {
             var $this = $(this);
-            $this.prev().addClass('focus');
+            $this.parents('p').addClass('focus');
         }).on('blur',txt,function() {
             var $this = $(this);
             if ($this.val()){
                 $this.addClass('used');
             }else{
                 $this.removeClass('used');
-                $this.prev().removeClass('focus');
+                $this.parents('p').removeClass('focus');
             }
         });
+
+        $('#wpcf7-f160-o1 input[type="submit"]').replaceWith('<button type="submit" class="wpcf7-form-control wpcf7-submit btn form_btn transition">'+$('#wpcf7-f160-o1 input[type="submit"]').attr('value')+'</button>');
 
         //hamburger menu
         //=====================================================
