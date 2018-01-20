@@ -25,7 +25,7 @@ include('content-header.php');
 </section>
 <!--second section-->
 <section id="second_sec" class="sec second_sec">
-    <h1 class="sec_title mb30">
+    <h1 class="sec_title mb-30">
         <span><?php _e('We Are'); ?></span> <?php _e('Worldwide'); ?>
     </h1>
     <div class="max_w">

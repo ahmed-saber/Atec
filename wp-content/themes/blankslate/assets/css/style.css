@@ -61,8 +61,18 @@ img{
     height: 100%;
 }
 
-.mb30{
-    margin-bottom: 30px;
+.responsive-embed, .flex-video {
+    position: relative;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+}
+.responsive-embed iframe, .responsive-embed object, .responsive-embed embed, .responsive-embed video, .flex-video iframe, .flex-video object, .flex-video embed, .flex-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .transition, a {
@@ -941,13 +951,9 @@ button.slick-prev:hover {
     min-height: 200px;
 }
 
-.gallery_unit {
-    /*display: none;*/
-}
-
 /*-------------------------------------------------------
-       Section Four
-    -------------------------------------------------------*/
+Section Four
+-------------------------------------------------------*/
 
 .fourth_sec {
     height: auto;
@@ -975,7 +981,7 @@ button.slick-prev:hover {
 }
 
 /*-------------------------------------------------------
-   Section five
+Section five
 -------------------------------------------------------*/
 
 .sec.fifth_sec {
@@ -1229,6 +1235,19 @@ button.slick-prev:hover {
 }
 .navigation .active a,.navigation a:hover{
     color: #b7d333;
+}
+/* Careers page */
+.block-st10 .col{
+    padding: 0;
+}
+.block-st10 .contactsection{
+    position: relative;
+    color: #fff;
+    background-color: #b2cd31;
+    padding: 5%;
+}
+.block-st10 h1{
+    color: #272727;
 }
 
 /*-------------------------------------------------------
