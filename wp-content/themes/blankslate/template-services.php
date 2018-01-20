@@ -3,8 +3,8 @@
 <?php
 $contentHeaderData = '
     <h2>'.get_field("sub_title").'</h2>
-    <h1>'.get_field("title").'</h1>
-    <button type="button" class="btn transition">REQUEST QUOTE</button>
+    <h1 class="mb-40">'.get_field("title").'</h1>
+    <button type="button" class="btn transition">'.__('REQUEST QUOTE').'</button>
 ';
 include('content-header.php');
 ?>
