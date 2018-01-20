@@ -5,13 +5,14 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/pintsize.min.css"/>
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/navigation.css" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/contact_form.css" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/hamburgers.css" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/lightgallery.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/navigation.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/contact_form.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/hamburgers.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/lightgallery.css">
     <?php wp_head(); ?>
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
