@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BlankSlate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-25 16:36+0000\n"
-"PO-Revision-Date: 2018-01-25 16:54+0000\n"
+"POT-Creation-Date: 2018-01-25 19:47+0000\n"
+"PO-Revision-Date: 2018-01-25 19:48+0000\n"
 "Last-Translator: admin <smartic@gmail.com>\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
@@ -26,17 +26,21 @@ msgstr ""
 msgid "Sidebar Widget Area"
 msgstr ""
 
-#: template-about.php:7 template-contact.php:7 template-news.php:7
+#: template-about.php:7 template-news.php:7
 msgid "Call to Action"
 msgstr ""
 
-#: template-careers.php:39
+#: template-careers.php:41
 msgid "View all Roles"
-msgstr ""
+msgstr "عرض جميع الوظائف"
 
-#: template-about.php:83
-msgid "<span>We Are</span> Worldwide"
-msgstr "<span>مكاتب</span> العوضي"
+#. Name of the template
+msgid "Roles"
+msgstr "الوظائف"
+
+#: template-roles.php:42
+msgid "More"
+msgstr "المزيد"
 
 #: 404.php:5
 msgid "Not Found"
@@ -83,54 +87,54 @@ msgstr "© دار العوضي للإستشارات الهندسية - جميع 
 msgid "Engineering Consultancy"
 msgstr "الاستشارات الهندسية"
 
-#: front-page.php:34 template-news.php:54
+#: front-page.php:37 template-news.php:54
 msgid "Read More"
 msgstr "استكمل القراءة"
 
 #. Name of the template
 #. Name of the template
-#: front-page.php:44
+#: front-page.php:47
 msgid "About"
 msgstr "عن"
 
-#: front-page.php:44
+#: front-page.php:47
 msgid "ATEC"
 msgstr "دار العوضي"
 
-#: front-page.php:62
+#: front-page.php:65
 msgid "Our Specialization"
 msgstr "مجالات تخصصنا"
 
-#: front-page.php:74
+#: front-page.php:77
 msgid "Architecture"
 msgstr "التصميمات المعمارية"
 
-#: front-page.php:86
+#: front-page.php:89
 msgid "Interiors"
 msgstr "المخططات التنفيذية"
 
-#: front-page.php:99
+#: front-page.php:102
 msgid "Planing"
 msgstr "التصميم الداخلي"
 
-#: front-page.php:109
+#: front-page.php:112
 msgid "<span>Our</span> Projects"
 msgstr "<span>مشاريع</span> العوضي"
 
 #. Name of the template
-#: front-page.php:110 template-projects.php:11
+#: front-page.php:113 template-projects.php:11
 msgid "Projects"
 msgstr "مشاريع"
 
-#: front-page.php:113 template-projects.php:14
+#: front-page.php:116 template-projects.php:14
 msgid "Show All"
 msgstr "الكل"
 
-#: front-page.php:158
+#: front-page.php:161
 msgid "<span>Our</span> Clients"
 msgstr "<span>عملاء</span> العوضي"
 
-#: front-page.php:159
+#: front-page.php:162
 msgid "clients"
 msgstr "عملاء"
 
@@ -161,7 +165,7 @@ msgstr "لم يتم العثور على شيء"
 msgid "Sorry, nothing matched your search. Please try again."
 msgstr "آسف، لا شيء يضاهي بحثك. حاول مرة اخرى."
 
-#: single-positions.php:26 template-careers.php:75
+#: single-positions.php:26 template-careers.php:78
 msgid "Submit your CV"
 msgstr "أرسل سيرتك الذاتية"
 
@@ -182,6 +186,10 @@ msgstr "تخصص"
 msgid "News"
 msgstr "أخبار"
 
+#: template-about.php:83
+msgid "<span>We Are</span> Worldwide"
+msgstr "<span>مكاتب</span> العوضي"
+
 #. Name of the template
 msgid "Careers"
 msgstr "وظائف"
@@ -190,11 +198,11 @@ msgstr "وظائف"
 msgid "Send Your CV"
 msgstr "أرسل سيرتك الذاتية"
 
-#: template-careers.php:39
+#: template-careers.php:40
 msgid "Open"
 msgstr "افتح"
 
-#: template-careers.php:39
+#: template-careers.php:40
 msgid "Positions"
 msgstr "وظائف"
 
@@ -202,7 +210,7 @@ msgstr "وظائف"
 msgid "Contact"
 msgstr "اتصل"
 
-#: template-contact.php:21
+#: template-contact.php:7 template-contact.php:21
 msgid "Send Us Mail"
 msgstr "أرسل لنا البريد"
 

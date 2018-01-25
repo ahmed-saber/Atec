@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-25 16:36+0000\n"
+"POT-Creation-Date: 2018-01-25 19:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -67,54 +67,54 @@ msgstr ""
 msgid "Engineering Consultancy"
 msgstr ""
 
-#: front-page.php:34 template-news.php:54
+#: front-page.php:37 template-news.php:54
 msgid "Read More"
 msgstr ""
 
 #. Name of the template
 #. Name of the template
-#: front-page.php:44
+#: front-page.php:47
 msgid "About"
 msgstr ""
 
-#: front-page.php:44
+#: front-page.php:47
 msgid "ATEC"
 msgstr ""
 
-#: front-page.php:62
+#: front-page.php:65
 msgid "Our Specialization"
 msgstr ""
 
-#: front-page.php:74
+#: front-page.php:77
 msgid "Architecture"
 msgstr ""
 
-#: front-page.php:86
+#: front-page.php:89
 msgid "Interiors"
 msgstr ""
 
-#: front-page.php:99
+#: front-page.php:102
 msgid "Planing"
 msgstr ""
 
-#: front-page.php:109
+#: front-page.php:112
 msgid "<span>Our</span> Projects"
 msgstr ""
 
 #. Name of the template
-#: front-page.php:110 template-projects.php:11
+#: front-page.php:113 template-projects.php:11
 msgid "Projects"
 msgstr ""
 
-#: front-page.php:113 template-projects.php:14
+#: front-page.php:116 template-projects.php:14
 msgid "Show All"
 msgstr ""
 
-#: front-page.php:158
+#: front-page.php:161
 msgid "<span>Our</span> Clients"
 msgstr ""
 
-#: front-page.php:159
+#: front-page.php:162
 msgid "clients"
 msgstr ""
 
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Sorry, nothing matched your search. Please try again."
 msgstr ""
 
-#: single-positions.php:26 template-careers.php:75
+#: single-positions.php:26 template-careers.php:78
 msgid "Submit your CV"
 msgstr ""
 
@@ -157,7 +157,7 @@ msgstr ""
 msgid "Tag Archives: "
 msgstr ""
 
-#: template-about.php:7 template-contact.php:7 template-news.php:7
+#: template-about.php:7 template-news.php:7
 msgid "Call to Action"
 msgstr ""
 
@@ -186,15 +186,15 @@ msgstr ""
 msgid "Send Your CV"
 msgstr ""
 
-#: template-careers.php:39
+#: template-careers.php:40
 msgid "Open"
 msgstr ""
 
-#: template-careers.php:39
+#: template-careers.php:40
 msgid "Positions"
 msgstr ""
 
-#: template-careers.php:39
+#: template-careers.php:41
 msgid "View all Roles"
 msgstr ""
 
@@ -202,7 +202,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: template-contact.php:21
+#: template-contact.php:7 template-contact.php:21
 msgid "Send Us Mail"
 msgstr ""
 
@@ -212,6 +212,14 @@ msgstr ""
 
 #: template-contact.php:29
 msgid "Worldwide"
+msgstr ""
+
+#. Name of the template
+msgid "Roles"
+msgstr ""
+
+#: template-roles.php:42
+msgid "More"
 msgstr ""
 
 #. Name of the template

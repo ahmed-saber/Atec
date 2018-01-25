@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-25 16:25+0000\n"
+"POT-Creation-Date: 2018-01-25 16:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -174,12 +174,8 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: template-about.php:83 template-contact.php:29
-msgid "We Are"
-msgstr ""
-
-#: template-about.php:83 template-contact.php:29
-msgid "Worldwide"
+#: template-about.php:83
+msgid "<span>We Are</span> Worldwide"
 msgstr ""
 
 #. Name of the template
@@ -208,6 +204,14 @@ msgstr ""
 
 #: template-contact.php:21
 msgid "Send Us Mail"
+msgstr ""
+
+#: template-contact.php:29
+msgid "We Are"
+msgstr ""
+
+#: template-contact.php:29
+msgid "Worldwide"
 msgstr ""
 
 #. Name of the template
