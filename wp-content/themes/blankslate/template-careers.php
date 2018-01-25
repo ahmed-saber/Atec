@@ -4,7 +4,7 @@
 $contentHeaderData = '
     <h1>'.get_field("title").'</h1>
     <h2 class="mb-40">'.get_field("sub_title").'</h2>
-    <button type="button" class="btn transition" onclick="window.location = \'#applyto\'">'.__('Send Your CV').'</button>
+    <button type="button" class="btn transition" onclick="window.location = \'#applyto\'">'.__('Send Your CV', 'blankslate').'</button>
 ';
 include('content-header.php');
 ?>
@@ -36,7 +36,7 @@ include('content-header.php');
 
 <section id="second_sec" class="sec second_sec">
     <div class="max_w">
-        <h1 class="sec_title"><span><?php echo __('Open'); ?></span> <?php echo __('Positions'); ?> <a href=""><?php echo __('View all Rols'); ?></a></h1>
+        <h1 class="sec_title"><span><?php echo __('Open', 'blankslate'); ?></span> <?php echo __('Positions', 'blankslate'); ?> <a href=""><?php echo __('View all Roles', 'blankslate'); ?></a></h1>
         <div class="flex">
             <?php
             // VARS
@@ -72,11 +72,15 @@ include('content-header.php');
 
 <div id="applyto" class="applyto">
     <div class="max_w">
-        <h1><?php echo __('Submit your CV'); ?></h1>
+        <h1><?php echo __('Submit your CV', 'blankslate'); ?></h1>
         <div class="flex">
             <div class="col col--12 col__md--12 col__lg--12">
             <?php
-            echo do_shortcode('[contact-form-7 id="173" title="Submit your CV"]');
+            if(get_locale() == 'ar'){
+                echo do_shortcode('[contact-form-7 id="212" title="Submit your CV AR"]');
+            }else{
+                echo do_shortcode('[contact-form-7 id="173" title="Submit your CV"]');
+            }
             ?>
             </div>
         </div>

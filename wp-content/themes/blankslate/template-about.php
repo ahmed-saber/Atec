@@ -4,7 +4,7 @@
 $contentHeaderData = '
     <h2>'.get_field("sub_title").'</h2>
     <h1 class="mb-40">'.get_field("title").'</h1>
-    <!--button type="button" class="btn transition">'.__('Call to Action').'</button-->
+    <!--button type="button" class="btn transition">'.__('Call to Action', 'blankslate').'</button-->
 ';
 include('content-header.php');
 ?>
@@ -26,8 +26,8 @@ include('content-header.php');
 <!--second section-->
 <section id="second_sec" class="sec second_sec">
     <h1 class="sec_title mb-30">
-    <span><?php _e('Our'); ?></span> <?php _e('Specialization'); ?></h1>
-    <span class="no-selection BG_text"><?php _e('News'); ?></span>
+    <span><?php _e('Our', 'blankslate'); ?></span> <?php _e('Specialization', 'blankslate'); ?></h1>
+    <span class="no-selection BG_text"><?php _e('News', 'blankslate'); ?></span>
     <div class="max_w">
         <div class="flex">
             <div class="col col--12 col__md--4 col__lg--4">
@@ -80,7 +80,7 @@ include('content-header.php');
 <!--second section-->
 <section id="second_sec" class="sec second_sec">
     <h1 class="sec_title mb-30">
-        <span><?php _e('We Are'); ?></span> <?php _e('Worldwide'); ?>
+        <?php _e('<span>We Are</span> Worldwide', 'blankslate'); ?>
     </h1>
     <div class="max_w">
         <div class="flex">

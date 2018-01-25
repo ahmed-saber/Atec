@@ -2,16 +2,16 @@
 <?php get_header(); ?>
 <?php
 $contentHeaderData = '
-    <h2>'.get_field("sub_title").'</h2>
     <h1>'.get_field("title").'</h1>
+    <h2>'.get_field("sub_title").'</h2>
 ';
 include('content-header.php');
 ?>
 <section id="third_sec" class="third_sec">
-    <span class="no-selection BG_text"><?php _e('Projects'); ?></span>
+    <span class="no-selection BG_text"><?php _e('Projects', 'blankslate'); ?></span>
     <div class="filters-button-container">
         <div class="button-group filters-button-group stagger_2">
-            <button class="button is-checked" data-filter="all"><?php _e('Show All'); ?></button>
+            <button class="button is-checked" data-filter="all"><?php _e('Show All', 'blankslate'); ?></button>
             <?php
             $terms = get_terms( array(
                 'taxonomy' => 'projects_types',

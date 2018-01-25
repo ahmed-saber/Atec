@@ -23,7 +23,7 @@ include('content-header.php');
 </section>
 <div id="applyto" class="applyto">
     <div class="max_w">
-        <h1><?php echo __('Submit your CV'); ?></h1>
+        <h1><?php echo __('Submit your CV', 'blankslate'); ?></h1>
         <div class="flex">
             <div class="col col--12 col__md--12 col__lg--12">
             <?php

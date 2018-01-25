@@ -16,10 +16,10 @@ $frontpage_id = get_option('page_on_front');
     <div class="logo_container anim1 hidden">
         <span class="logo"></span>
         <span class="pagingInfo"><strong>01</strong>/ <?php echo str_pad(count($query->posts), 2, '0', STR_PAD_LEFT);; ?></span>
-        <span class="no-selection BG_text">atec</span>
+        <span class="no-selection BG_text"><?php _e('atec', 'blankslate'); ?></span>
     </div>
     <?php
-    $slogan_txt = __('Engineering Consultancy');
+    $slogan_txt = __('Engineering Consultancy', 'blankslate');
     include('aside.php');
     ?>
     <div class="carousel_arrows"></div>
@@ -31,7 +31,7 @@ $frontpage_id = get_option('page_on_front');
                 <div class="carousel_item_info hidden transition">
                     <h1><?php the_title() ?></h1>
                     <p><?php echo wp_filter_nohtml_kses(get_the_content()); ?></p>
-                    <button type="button" class="btn transition" onclick="window.location = '<?php echo get_permalink( $post->post_parent ); ?>'"><?php _e('Read More'); ?></button>
+                    <button type="button" class="btn transition" onclick="window.location = '<?php echo get_permalink( $post->post_parent ); ?>'"><?php _e('Read More', 'blankslate'); ?></button>
                 </div>
             </div>
             <?php
@@ -41,7 +41,7 @@ $frontpage_id = get_option('page_on_front');
 </section>
 <!--second section-->
 <section id="second_sec" class="sec second_sec">
-    <h1 class="sec_title"><span><?php _e('About'); ?></span> <?php _e('ATEC'); ?></h1>
+    <h1 class="sec_title"><span><?php _e('About', 'blankslate'); ?></span> <?php _e('ATEC', 'blankslate'); ?></h1>
     <span class="no-selection BG_text">
         <?php the_field('title',$frontpage_id); ?>
     </span>
@@ -59,7 +59,7 @@ $frontpage_id = get_option('page_on_front');
             </div>
             <div class="col col--12 col__md--4 col__lg--4">
                 <div class="content-block Specialization stagger_1">
-                    <h2><?php _e('Our Specialization'); ?></h2>
+                    <h2><?php _e('Our Specialization', 'blankslate'); ?></h2>
                     <ul class="icons_list">
                         <li>
                             <div class="first_line_icon line_icon">
@@ -71,7 +71,7 @@ $frontpage_id = get_option('page_on_front');
                                     </g>
                                 </svg>
                             </div>
-                            <h3><?php _e('Architecture'); ?></h3>
+                            <h3><?php _e('Architecture', 'blankslate'); ?></h3>
                         </li>
                         <li>
                             <div class="second_line_icon line_icon">
@@ -83,7 +83,7 @@ $frontpage_id = get_option('page_on_front');
                                     </g>
                                 </svg>
                             </div>
-                            <h3><?php _e('Interiors'); ?></h3>
+                            <h3><?php _e('Interiors', 'blankslate'); ?></h3>
                         </li>
                         <li>
                             <div class="third_line_icon line_icon">
@@ -96,7 +96,7 @@ $frontpage_id = get_option('page_on_front');
                                     </g>
                                 </svg>
                             </div>
-                            <h3><?php _e('Planing'); ?></h3>
+                            <h3><?php _e('Planing', 'blankslate'); ?></h3>
                         </li>
                     </ul>
                 </div>
@@ -106,11 +106,11 @@ $frontpage_id = get_option('page_on_front');
 </section>
 <!--third section-->
 <section id="third_sec" class="sec third_sec">
-    <h1 class="sec_title"><span><?php _e('Our'); ?></span> <?php _e('Projects'); ?></h1>
-    <span class="no-selection BG_text"><?php _e('Projects'); ?></span>
+    <h1 class="sec_title"><?php _e('<span>Our</span> Projects', 'blankslate'); ?></h1>
+    <span class="no-selection BG_text"><?php _e('Projects', 'blankslate'); ?></span>
     <div class="filters-button-container">
         <div class="button-group filters-button-group stagger_2">
-            <button class="button is-checked" data-filter="all"><?php _e('Show All'); ?></button>
+            <button class="button is-checked" data-filter="all"><?php _e('Show All', 'blankslate'); ?></button>
             <?php
             $terms = get_terms( array(
                 'taxonomy' => 'projects_types',
@@ -155,8 +155,8 @@ $frontpage_id = get_option('page_on_front');
 </section>
 <!--fourth Section-->
 <section id="fourth_sec" class="sec fourth_sec">
-    <h1 class="sec_title"><span><?php _e('Our'); ?></span> <?php _e('Clients'); ?></h1>
-    <span class="no-selection BG_text"><?php _e('clients'); ?></span>
+    <h1 class="sec_title"><?php _e('<span>Our</span> Clients', 'blankslate'); ?></h1>
+    <span class="no-selection BG_text"><?php _e('clients', 'blankslate'); ?></span>
     <div class="max_w">
         <div class="flex flex--middle clients_list stagger_4">
             <div class="transition">

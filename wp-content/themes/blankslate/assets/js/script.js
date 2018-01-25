@@ -18,7 +18,7 @@
         $(txt).each(function(){
             $(this).after('<div class="bar"/>');
         });
-        $('#wpcf7-f160-o1').on('focus',txt,function() {
+        $('.contact_form form').on('focus',txt,function() {
             var $this = $(this);
             $this.parents('p').addClass('focus');
         }).on('blur',txt,function() {
@@ -31,7 +31,7 @@
             }
         });
 
-        $('#wpcf7-f160-o1 input[type="submit"]').replaceWith('<button type="submit" class="wpcf7-form-control wpcf7-submit btn form_btn transition">'+$('#wpcf7-f160-o1 input[type="submit"]').attr('value')+'</button>');
+        $('.contact_form form input[type="submit"]').replaceWith('<button type="submit" class="wpcf7-form-control wpcf7-submit btn form_btn transition">'+$('.contact_form form input[type="submit"]').attr('value')+'</button>');
 
         //hamburger menu
         //=====================================================

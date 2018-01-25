@@ -1,18 +1,18 @@
 /*-------------------------------------------------------
     fonts
 -------------------------------------------------------*/
-
 @font-face {
-    font-family: 'Syntax LT Std';
-    font-weight: 400;
-    src: url(../fonts/SyntaxLTStd-Roman.otf) format('OpenType');
+    font-family: 'GE SS Two';
+    src: url('GESSTwoBold-Bold.eot');
+    src: url('../fonts/GESS Bold/GESSTwoBold-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GESS Bold/GESSTwoBold-Bold.woff2') format('woff2'),
+        url('../fonts/GESS Bold/GESSTwoBold-Bold.woff') format('woff'),
+        url('../fonts/GESS Bold/GESSTwoBold-Bold.ttf') format('truetype'),
+        url('../fonts/GESS Bold/GESSTwoBold-Bold.svg#GESSTwoBold-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
-@font-face {
-    font-family: 'Syntax LT Std bold';
-    font-weight: 700;
-    src: url(../fonts/SyntaxLTStd-Roman-bold.otf) format('OpenType');
-}
 
 /*-------------------------------------------------------
     General styles
@@ -28,10 +28,13 @@
 html {
     overflow-x: hidden;
     color: #fff;
-    font-family: 'Syntax LT Std', sans-serif;
     font-size: 1em;
     line-height: 1.4;
     background-color: #272727;
+    text-align: right;
+}
+html, button, input, textarea{
+    font-family: 'Cairo', sans-serif;
 }
 
 body {
@@ -91,7 +94,7 @@ svg {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Syntax LT Std bold', sans-serif;
+    font-family: 'GE SS Two';
     font-weight: normal;
 }
 
@@ -143,11 +146,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fr{
-    float: right;
+    float: left;
 }
 
 .fl{
-    float: left;
+    float: right;
 }
 
 .small {
@@ -206,7 +209,7 @@ textarea {
 .BG_text {
     color: #fff;
     opacity: .03;
-    font-family: 'Syntax LT Std bold', sans-serif;
+    font-family: 'GE SS Two';
     font-size: 7em;
     font-weight: bold;
     position: absolute;
@@ -216,7 +219,7 @@ textarea {
     display: block;
     text-align: center;
     padding: 20px 0;
-    font-family: 'Syntax LT Std bold', sans-serif;
+    font-family: 'GE SS Two';
     font-weight: normal;
     color: #b7d332;
     text-transform: uppercase;
@@ -302,7 +305,7 @@ h2 {
     font-size: .7em;
     position: relative;
     text-transform: uppercase;
-    font-family: 'Syntax LT Std', sans-serif;
+    font-family: 'Cairo', sans-serif;
     background-color: transparent;
     color: #fff;
     height: 40px;
@@ -429,13 +432,13 @@ h2 {
 }
 .block-st3 .contactsection img{
     vertical-align: middle;
-    margin-right: 10px;
+    margin-left: 10px;
     width: 32px;
 }
 
 .block-st3 .contactsection .BG_text{
     position: absolute;
-    right:0;
+    left:0;
     bottom:25%;
     z-index: 5;
     color: #fff;
@@ -464,7 +467,7 @@ h2 {
 
 .block-st3 .list-details ul{
     margin-top: 0px;
-    padding-left: 45px;
+    padding-right: 45px;
     font-size: 0.9em;
 }
 
@@ -480,18 +483,18 @@ h2 {
 }
 
 .first_sec aside, .block-st1 aside {
-    float: left;
+    float: right;
     background-color: #2e2e2e;
     padding: 50px;
     height: 100vh;
     position: relative;
-    font-family: 'Syntax LT Std', sans-serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 .lang_count {
     position: absolute;
     z-index: 99;
-    right: 35px;
+    left: 35px;
     top: 35px;
     overflow: hidden;
 }
@@ -502,9 +505,9 @@ h2 {
     border: none;
     cursor: pointer;
     color: #fff;
-    padding: 0 15px 0 0;
+    padding: 0 0 0 15px;
     text-transform: uppercase;
-    margin-right: -15px;
+    margin-left: -15px;
     height: 20px;
     font-size: .75em;
 }
@@ -516,7 +519,7 @@ h2 {
 .lang_count:before, .lang_count:after {
     content: '';
     position: absolute;
-    right: -8px;
+    left: -8px;
     top: 0;
     width: 28px;
     height: 21px;
@@ -571,7 +574,7 @@ aside .slogan {
     z-index: 13;
     text-transform: uppercase;
     font-size: .55em;
-    font-family: 'Syntax LT Std', sans-serif;
+    font-family: 'Cairo', sans-serif;
     letter-spacing: .2em;
     -moz-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -595,7 +598,7 @@ aside .slogan:before {
 .logo_container {
     background-color: #2e2e2e;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     z-index: 12;
     width: 200px;
@@ -613,8 +616,8 @@ aside .slogan:before {
     width: 140px;
     height: 180px;
     display: block;
-    background: url(../img/logo_vertical.png) no-repeat center center scroll transparent;
-    background-size: 60%;
+    background: url(../img/logo_vertical_ar.png) no-repeat center center scroll transparent;
+    background-size: contain;
     margin: auto;
     position: relative;
 }
@@ -623,7 +626,10 @@ aside .slogan:before {
     position: absolute;
     z-index: 9999;
     top: 290px;
-    left: 110px;
+    right: 110px;
+}
+.carousel.slick-initialized.slick-slider{
+    direction: ltr;
 }
 
 .carousel_item {
@@ -689,7 +695,7 @@ aside .slogan:before {
     color: #b7d333;
     margin: 5px;
     font-size: 1.8em;
-    font-family: 'Syntax LT Std bold', sans-serif;
+    font-family: 'GE SS Two';
 }
 
 button.slick-next, button.slick-prev {
@@ -698,7 +704,7 @@ button.slick-next, button.slick-prev {
     height: 25px;
     color: #000;
     fill: #000;
-    font-family: 'Syntax LT Std bold', sans-serif;
+    font-family: 'GE SS Two';
     margin: 10px;
     -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0, 0.995);
     -o-transition: all 0.5s cubic-bezier(0.42, 0, 0, 0.995);
@@ -759,7 +765,6 @@ button.slick-prev:hover {
 .icons_list h3 {
     text-transform: uppercase;
     margin: 5px 0;
-    letter-spacing: .2em;
     font-size: 1em;
 }
 
@@ -1064,12 +1069,12 @@ Section five
 .fifth_sec .content-block {
     display: table-cell;
     vertical-align: middle;
-    text-align: left;
+    text-align: right;
     padding: 0 15%;
 }
 
 .fifth_sec .sec_title {
-    text-align: left;
+    text-align: right;
     font-size: 2.2em;
 }
 
@@ -1109,7 +1114,7 @@ Section five
 .fifth_sec .lang_count {
     top: auto;
     bottom: 35px;
-    right: 35px;
+    left: 35px;
 }
 
 /* ITEMS IN THE SERVICES PAGE */
@@ -1120,7 +1125,7 @@ Section five
     background-color: #a7c02f;
     padding: 7%;
     color: #fff;
-    margin-left: -30%;
+    margin-right: -30%;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -1144,8 +1149,8 @@ Section five
 .item-st1.odd .item-st1-desc{
     position: relative;
     background-color: #1c1c1c;
-    margin-left: 0;
-    margin-right: -30%;
+    margin-right: 0;
+    margin-left: -30%;
     z-index: 1;
 }
 .item-st1.odd .item-st1-desc-holder{
@@ -1181,7 +1186,7 @@ Section five
 .item-st2 .item-st2-desc .link i{
     font-size: 1.3em;
     vertical-align: middle;
-    margin-left:10px;
+    margin-right:10px;
 }
 .item-st2 .item-st2-desc p{
     margin-bottom: 20px;

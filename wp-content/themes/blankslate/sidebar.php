@@ -1,6 +1,6 @@
 <aside id="sidebar" role="complementary">
     <div class="block-st9">
-        <h2>Recent Posts</h2>
+        <h2><?php _e('Recent Posts'); ?></h2>
         <div class="news-block">
             <?php
             // VARS

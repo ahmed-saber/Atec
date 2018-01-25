@@ -4,7 +4,7 @@
 $contentHeaderData = '
     <h2>'.get_field("sub_title").'</h2>
     <h1 class="mb-40">'.get_field("title").'</h1>
-    <button type="button" class="btn transition">'.__('REQUEST QUOTE').'</button>
+    <button type="button" class="btn transition">'.__('REQUEST QUOTE', 'blankslate').'</button>
 ';
 include('content-header.php');
 ?>

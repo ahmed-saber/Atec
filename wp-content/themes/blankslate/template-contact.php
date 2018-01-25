@@ -2,9 +2,9 @@
 <?php get_header(); ?>
 <?php
 $contentHeaderData = '
+    <h1>'.get_field("title").'</h1>
     <h2>'.get_field("sub_title").'</h2>
-    <h1 class="mb-40">'.get_field("title").'</h1>
-    <!--button type="button" class="btn transition">'.__('Call to Action').'</button-->
+    <button type="button" class="btn transition" onclick="window.location = \'#fifth_sec\'">'.__('Send Us Mail', 'blankslate').'</button>
 ';
 include('content-header.php');
 ?>
@@ -17,8 +17,8 @@ include('content-header.php');
         <div class="col col--12 col__md--6 col__lg--6 contactsection">
             <div class="target">
                 <?php echo wpautop($post->post_content); ?>
-                <span class="no-selection BG_text"><?php _e('contact'); ?></span>
-                <button type="button" class="btn transition" onclick="window.location = '#fifth_sec'"><?php _e('Send Us Mail'); ?></button>
+                <span class="no-selection BG_text"><?php _e('contact', 'blankslate'); ?></span>
+                <button type="button" class="btn transition" onclick="window.location = '#fifth_sec'"><?php _e('Send Us Mail', 'blankslate'); ?></button>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@ include('content-header.php');
 <!--second section-->
 <section id="second_sec" class="sec second_sec">
     <h1 class="sec_title mb-30">
-        <span><?php _e('We Are'); ?></span> <?php _e('Worldwide'); ?>
+        <span><?php _e('We Are', 'blankslate'); ?></span> <?php _e('Worldwide', 'blankslate'); ?>
     </h1>
     <div class="max_w">
         <div class="flex">
