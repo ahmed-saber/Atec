@@ -976,20 +976,33 @@ Section Four
     top: 90px;
 }
 
-.clients_list a {
+.clients_list .transition{
     display: block;
-    padding: 30px 20px 0;
-    width: 130px;
-    margin: auto;
+    width: 100%;
 }
 
-.clients_list svg {
-    fill: #959595;
-    max-height: 100px;
+.clients_list ol, .clients_list ul {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.clients_list a:hover svg {
-    fill: #b6d232;
+.clients_list li {
+    display: inline-block;
+    max-width: 120px;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+.clients_list li:hover {
+    
+}
+
+.clients_list li img{
+    width: 100%;
+    height: auto;
 }
 
 /*-------------------------------------------------------
