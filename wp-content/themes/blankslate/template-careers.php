@@ -8,7 +8,7 @@ $contentHeaderData = '
 ';
 include('content-header.php');
 ?>
-<!--second section-->
+
 <section id="second_sec" class="sec second_sec">
     <div class="max_w">
         <div class="flex">
@@ -20,7 +20,7 @@ include('content-header.php');
         </div>
     </div>
 </section>
-<!--second section-->
+
 <section class="block-st10">
     <div class="flex stagger_3">
         <div class="col col--12 col__md--6 col__lg--6">
@@ -33,4 +33,53 @@ include('content-header.php');
         </div>
     </div>
 </section>
+
+<section id="second_sec" class="sec second_sec">
+    <div class="max_w">
+        <h1 class="sec_title"><span><?php echo __('Open'); ?></span> <?php echo __('Positions'); ?> <a href=""><?php echo __('View all Rols'); ?></a></h1>
+        <div class="flex">
+            <?php
+            // VARS
+            $args = array(
+                'post_type' => 'positions',
+                'posts_per_page' => 3
+            );
+            // QUERY:
+            $query = new WP_Query($args);
+            while ($query->have_posts()) : $query->the_post();
+            ?>
+                <div class="col col--12 col__md--4 col__lg--4">
+                    <div class="job-st1">
+                        <div class="job-st1-img">
+                            <a href="<?php echo get_permalink( $post->post_parent ); ?>">
+                                <img src="<?php echo get_the_post_thumbnail_url($post->ID, 'thumbnail'); ?>">
+                                <i></i>
+                            </a>
+                        </div>
+                        <div class="job-st1-desc">
+                            <h3><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php the_field('sub_title'); ?></a></h3>
+                            <h4><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php the_title() ?></a></h4>
+                            <div class="date"><?php the_time( get_option( 'date_format' ) ); ?></div>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            endwhile;
+            ?>
+        </div>
+    </div>
+</section>
+
+<div class="applyto">
+    <div class="max_w">
+        <h1><?php echo __('Submit your CV'); ?></h1>
+        <div class="flex">
+            <div class="col col--12 col__md--12 col__lg--12">
+            <?php
+            echo do_shortcode('[contact-form-7 id="173" title="Submit your CV"]');
+            ?>
+            </div>
+        </div>
+    </div>
+</div>
 <?php get_footer(); ?>

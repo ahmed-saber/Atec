@@ -23,10 +23,12 @@
                             </div>
                             <div class="col col--12 col__md--6 col__lg--8 item-st2-desc-holder">
                                 <div class="item-st2-desc">
-                                    <p><?php echo substr(get_the_excerpt(), 0, 90); ?>...</p>
-                                    <section class="entry-meta clearfix">
-                                        <span class="entry-date"><?php the_time( get_option( 'date_format' ) ); ?></span>
-                                    </section>
+                                    <a href="<?php echo get_permalink( $post->post_parent ); ?>">
+                                        <p><?php echo substr(get_the_excerpt(), 0, 90); ?>...</p>
+                                        <section class="entry-meta clearfix">
+                                            <span class="entry-date"><?php the_time( get_option( 'date_format' ) ); ?></span>
+                                        </section>
+                                    </a>
                                 </div>
                             </div>
                         </div>
