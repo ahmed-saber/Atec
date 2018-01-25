@@ -4,7 +4,7 @@
 $contentHeaderData = '
     <h1>'.get_field("title").'</h1>
     <h2 class="mb-40">'.get_field("sub_title").'</h2>
-    <button type="button" class="btn transition">'.__('Send Your CV').'</button>
+    <button type="button" class="btn transition" onclick="window.location = \'#applyto\'">'.__('Send Your CV').'</button>
 ';
 include('content-header.php');
 ?>
@@ -70,7 +70,7 @@ include('content-header.php');
     </div>
 </section>
 
-<div class="applyto">
+<div id="applyto" class="applyto">
     <div class="max_w">
         <h1><?php echo __('Submit your CV'); ?></h1>
         <div class="flex">
