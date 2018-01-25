@@ -36,7 +36,10 @@ include('content-header.php');
 
 <section id="second_sec" class="sec second_sec">
     <div class="max_w">
-        <h1 class="sec_title"><span><?php echo __('Open', 'blankslate'); ?></span> <?php echo __('Positions', 'blankslate'); ?> <a href=""><?php echo __('View all Roles', 'blankslate'); ?></a></h1>
+        <h1 class="sec_title">
+            <span><?php echo __('Open', 'blankslate'); ?></span> <?php echo __('Positions', 'blankslate'); ?>
+            <a href="<?php echo get_page_link(217); ?>"><?php echo __('View all Roles', 'blankslate'); ?></a>
+        </h1>
         <div class="flex">
             <?php
             // VARS
