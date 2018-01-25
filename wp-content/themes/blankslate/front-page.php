@@ -22,7 +22,10 @@ $frontpage_id = get_option('page_on_front');
     $slogan_txt = __('Engineering Consultancy', 'blankslate');
     include('aside.php');
     ?>
-    <div class="carousel_arrows"></div>
+    <div class="carousel_arrows">
+        <button type="button" class="slick-prev slick-arrow" aria-label="Previous" role="button"><?php _e('Previous'); ?></button>
+        <button type="button" class="slick-next slick-arrow" aria-label="Next" role="button"><?php _e('Next'); ?></button>
+    </div>
     <div class="carousel hidden">
         <?php
         while ($query->have_posts()) : $query->the_post();

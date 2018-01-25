@@ -72,6 +72,7 @@
     </div>
 </div>
 <?php wp_footer(); ?>
+<input type="hidden" class="language" value="<?php echo get_locale(); ?>">
 <!-- end container -->
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/jquery-1.11.2.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/slick.min.js"></script>

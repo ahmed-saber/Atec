@@ -17,7 +17,6 @@
         var $status = $('.pagingInfo');
         var $slickElement = $('.carousel');
         var $slickText = $('.carousel_item_info');
-
         $slickElement.removeClass('hidden');
 
         $slickElement.slick({
@@ -32,6 +31,9 @@
             zIndex: 99,
             swipe: false,
             appendArrows: $('.carousel_arrows'),
+            rtl:($('.language').val() == 'ar') ? true : false,
+            prevArrow: $('.slick-prev'),
+            nextArrow: $('.slick-next'),
             customPaging: function (slider, i) {
                 var thumb = $(slider.$slides[i]).data();
                 return '<a>' + i + '</a>';

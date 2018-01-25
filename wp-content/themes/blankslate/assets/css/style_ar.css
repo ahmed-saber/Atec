@@ -627,8 +627,6 @@ aside .slogan:before {
     z-index: 9999;
     top: 290px;
     right: 110px;
-}
-.carousel.slick-initialized.slick-slider{
     direction: ltr;
 }
 
