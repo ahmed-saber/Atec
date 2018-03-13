@@ -115,44 +115,47 @@ $frontpage_id = get_option('page_on_front');
         <div class="button-group filters-button-group stagger_2">
             <button class="button is-checked" data-filter="all"><?php _e('Show All', 'blankslate'); ?></button>
             <?php
-            $terms = get_terms( array(
-                'taxonomy' => 'projects_types',
-                'hide_empty' => true
-            ) );
-            foreach($terms as $term){
-                ?>
-                    <button class="button" data-filter="<?php echo $term->slug; ?>"><?php echo $term->name; ?></button>
-                <?php
+            // VARS
+            $args = array(
+                'post_type' => 'projects',
+                'posts_per_page' => 4
+            );
+            // QUERY:
+            $query1 = new WP_Query($args);
+            $index = 0;
+            $terms_ARR = array();
+            $projects_ARR_HTML = array();
+            ?>
+            <?php
+            while ($query1->have_posts()) : $query1->the_post();
+                $index++;
+                $terms = get_the_terms(get_the_ID(),'projects_types');
+                array_push($projects_ARR_HTML,'
+                <div class="col col--12 col__md--3 col__lg--3 element-item all '.$terms[0]->slug.'">
+                    <a data-category="'.$terms[0]->slug.'" data-project="'.$index.'" class="project_unit" href="'.get_permalink($post->post_parent).'">
+                        <h3 class="proj_title transition">'.get_the_title().'</h3>
+                        <span class="proj_img">
+                            <img class="transition" src="'.get_the_post_thumbnail_url($post->ID,'full').'">
+                        </span>
+                    </a>
+                </div>');
+                $terms_ARR[$terms[0]->slug] = $terms;
+            endwhile;
+            ?>
+            <?php
+            foreach($terms_ARR as $term){
+            ?>
+                <button class="button" data-filter="<?php echo $term[0]->slug; ?>"><?php echo $term[0]->name; ?></button>
+            <?php
             }
             ?>
         </div>
     </div>
     <div class="flex flex--center collapsed_columns projects_container grid stagger_3">
         <?php
-        // VARS
-        $args = array(
-            'post_type' => 'projects',
-            'posts_per_page' => 4
-        );
-        // QUERY:
-        $query1 = new WP_Query($args);
-        $index = 0;
-        ?>
-        <?php
-        while ($query1->have_posts()) : $query1->the_post();
-            $index++;
-            $terms = get_the_terms(get_the_ID(),'projects_types');
-        ?>
-            <div class="col col--12 col__md--3 col__lg--3 element-item all <?php echo $terms[0]->slug; ?>">
-                <a data-category="<?php echo $terms[0]->slug; ?>" data-project="<?php echo $index; ?>" class="project_unit" href="<?php echo get_permalink($post->post_parent); ?>">
-                    <h3 class="proj_title transition"><?php the_title() ?></h3>
-                    <span class="proj_img">
-                        <img class="transition" src="<?php echo get_the_post_thumbnail_url($post->ID,'full'); ?>">
-                    </span>
-                </a>
-            </div>
-        <?php
-        endwhile;
+        foreach($projects_ARR_HTML as $project_HTML){
+            print $project_HTML;
+        }
         ?>
     </div>
 </section>
