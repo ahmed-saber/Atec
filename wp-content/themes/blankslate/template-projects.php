@@ -19,7 +19,7 @@ include('content-header.php');
             ) );
             foreach($terms as $term){
                 ?>
-                    <button class="button" data-filter="<?php echo $term->name; ?>"><?php echo $term->name; ?></button>
+                    <button class="button" data-filter="<?php echo $term->slug; ?>"><?php echo $term->name; ?></button>
                 <?php
             }
             ?>
