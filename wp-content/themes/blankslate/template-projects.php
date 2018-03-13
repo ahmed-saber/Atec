@@ -19,7 +19,7 @@ include('content-header.php');
             ) );
             foreach($terms as $term){
                 ?>
-                    <button class="button" data-filter="<?php echo $term->name; ?>"><?php echo $term->name; ?></button>
+                    <button class="button" data-filter="<?php echo $term->slug; ?>"><?php echo $term->name; ?></button>
                 <?php
             }
             ?>
@@ -29,7 +29,8 @@ include('content-header.php');
         <?php
         // VARS
         $args = array(
-            'post_type' => 'projects'
+            'post_type' => 'projects',
+            'posts_per_page' => -1
         );
         // QUERY:
         $query1 = new WP_Query($args);
@@ -40,8 +41,8 @@ include('content-header.php');
             $index++;
             $terms = get_the_terms(get_the_ID(),'projects_types');
         ?>
-            <div class="col col--12 col__md--3 col__lg--3 element-item all <?php echo $terms[0]->name; ?>">
-                <a data-category="<?php echo $terms[0]->name; ?>" data-project="<?php echo $index; ?>" class="project_unit" href="<?php echo get_permalink($post->post_parent); ?>">
+            <div class="col col--12 col__md--3 col__lg--3 element-item all <?php echo $terms[0]->slug; ?>">
+                <a data-category="<?php echo $terms[0]->slug; ?>" data-project="<?php echo $index; ?>" class="project_unit" href="<?php echo get_permalink($post->post_parent); ?>">
                     <h3 class="proj_title transition"><?php the_title() ?></h3>
                     <span class="proj_img">
                         <img class="transition" src="<?php echo get_the_post_thumbnail_url($post->ID,'full'); ?>">
