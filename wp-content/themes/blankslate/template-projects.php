@@ -29,7 +29,8 @@ include('content-header.php');
         <?php
         // VARS
         $args = array(
-            'post_type' => 'projects'
+            'post_type' => 'projects',
+            'posts_per_page' => -1
         );
         // QUERY:
         $query1 = new WP_Query($args);
