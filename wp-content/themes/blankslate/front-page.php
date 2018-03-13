@@ -118,7 +118,9 @@ $frontpage_id = get_option('page_on_front');
             // VARS
             $args = array(
                 'post_type' => 'projects',
-                'posts_per_page' => 4
+                'posts_per_page' => 4,
+                'meta_key' => 'display_in_frontpage',
+                'meta_value' => 1
             );
             // QUERY:
             $query1 = new WP_Query($args);
