@@ -40,7 +40,6 @@ include('content-header.php');
         while ($query1->have_posts()) : $query1->the_post();
             $index++;
             $terms = get_the_terms(get_the_ID(),'projects_types');
-            print_r($terms);
         ?>
             <div class="col col--12 col__md--3 col__lg--3 element-item all <?php echo $terms[0]->slug; ?>">
                 <a data-category="<?php echo $terms[0]->slug; ?>" data-project="<?php echo $index; ?>" class="project_unit" href="<?php echo get_permalink($post->post_parent); ?>">
