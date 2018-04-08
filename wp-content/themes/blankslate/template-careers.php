@@ -23,12 +23,7 @@ include('content-header.php');
 
 <section class="block-st10">
     <div class="flex stagger_3">
-        <div class="col col--12 col__md--6 col__lg--6">
-            <div class="responsive-embed">
-                <iframe width="560" height="315" src="<?php the_field('youtube'); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="col col--12 col__md--6 col__lg--6 contactsection">
+        <div class="col col--12 col__md--12 col__lg--12 contactsection">
             <?php the_field('benefits'); ?>
         </div>
     </div>
