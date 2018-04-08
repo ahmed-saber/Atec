@@ -23,7 +23,7 @@ include('content-header.php');
 
 <section class="block-st10">
     <div class="flex stagger_3">
-        <div class="col col--12 col__md--12 col__lg--12 contactsection">
+        <div class="col col--12 col__md--12 col__lg--12 contactsection text_center">
             <?php the_field('benefits'); ?>
         </div>
     </div>
