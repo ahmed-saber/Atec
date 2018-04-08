@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-01-23 21:25:10+0000\n"
+"PO-Revision-Date: 2018-03-24 19:38:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1803,7 +1803,7 @@ msgid "We&#8217;re going to use this information to create a %s file."
 msgstr "سنستخدم هذه المعلومات لإنشاء ملف %s."
 
 #. translators: %s: wp-content/uploads
-#: wp-admin/options-media.php:112
+#: wp-admin/options-media.php:114
 msgid "Default is %s"
 msgstr "الإفتراضي هو %s"
 
@@ -2988,7 +2988,7 @@ msgstr ""
 
 #. translators: Do not translate USERNAME, ADMIN_URL, EMAIL, SITENAME, SITEURL:
 #. those are placeholders.
-#: wp-admin/includes/misc.php:1161
+#: wp-admin/includes/misc.php:1163
 msgid ""
 "Howdy ###USERNAME###,\n"
 "\n"
@@ -5410,7 +5410,7 @@ msgstr "الملف كبير جداً. يجب على الملفات أن يكون
 msgid "You have used your space quota. Please delete files before uploading."
 msgstr "لقد قمت باستنفاذ كامل المساحة المخصصة لك. من فضلك قم بحذف بعض الملفات حتى تتمكن من رفع ملفات أخرى."
 
-#: wp-admin/includes/misc.php:1208
+#: wp-admin/includes/misc.php:1210
 msgid "[%s] New Admin Email Address"
 msgstr "[%s] البريد الإلكتروني الجديد للمدير"
 
@@ -8069,11 +8069,11 @@ msgstr "السماح بالتسجيل"
 msgid "Users must be registered and logged in to comment"
 msgstr "يجب على الزوار التسجيل ليتمكنوا من التعليق"
 
-#: wp-admin/options-media.php:108
+#: wp-admin/options-media.php:110
 msgid "Store uploads in this folder"
 msgstr "ضع الملفات المرفوعة في هذا المجلد"
 
-#: wp-admin/options-media.php:131
+#: wp-admin/options-media.php:133
 msgid "Organize my uploads into month- and year-based folders"
 msgstr "تنظيم الملفات المرفوعة في مجلدات بالإعتماد على التاريخ"
 
@@ -8846,31 +8846,31 @@ msgstr "إعدادات الوسائط"
 msgid "Image sizes"
 msgstr "أحجام الصورة"
 
-#: wp-admin/options-media.php:53
+#: wp-admin/options-media.php:53 wp-admin/options-media.php:54
 msgid "Thumbnail size"
 msgstr "حجم الصورة المصغّرة (Thumbnail)"
 
-#: wp-admin/options-media.php:65 wp-admin/options-media.php:66
+#: wp-admin/options-media.php:67 wp-admin/options-media.php:68
 msgid "Medium size"
 msgstr "حجم متوسط"
 
-#: wp-admin/options-media.php:76 wp-admin/options-media.php:77
+#: wp-admin/options-media.php:78 wp-admin/options-media.php:79
 msgid "Large size"
 msgstr "حجم كبير"
 
-#: wp-admin/options-media.php:94
+#: wp-admin/options-media.php:96
 msgid "Embeds"
 msgstr "إدراجات"
 
-#: wp-admin/options-media.php:101
+#: wp-admin/options-media.php:103
 msgid "Uploading Files"
 msgstr "رفع الملفات"
 
-#: wp-admin/options-media.php:118
+#: wp-admin/options-media.php:120
 msgid "Full URL path to files"
 msgstr "رابط كامل لمسار الملفات"
 
-#: wp-admin/options-media.php:120
+#: wp-admin/options-media.php:122
 msgid "Configuring this is optional. By default, it should be blank."
 msgstr "هذا الإعداد اختياري. افتراضياً يجب أن يكون فارغاً."
 
@@ -8939,7 +8939,7 @@ msgstr[3] "مفعّلة <span class=\"count\">(%s)</span>"
 msgstr[4] "مفعّلة  <span class=\"count\">(%s)</span>"
 msgstr[5] "مفعّلة  <span class=\"count\">(%s)</span>"
 
-#: wp-admin/options-media.php:60
+#: wp-admin/options-media.php:62
 msgid "Crop thumbnail to exact dimensions (normally thumbnails are proportional)"
 msgstr "إقطع الصورة المصغرة لتتلاءم مع الأبعاد (العرض والطول) بالضبط"
 
@@ -9212,11 +9212,11 @@ msgstr "للنشر في ووردبريس عن طريق البريد الإلكت
 msgid "You are using a development version (%1$s). Cool! Please <a href=\"%2$s\">stay updated</a>."
 msgstr "رائع! أنت تستخدم نسخة المطورين من ووردبريس %1$s. يرجى <a href=\"%2$s\">التحديث باستمرار</a>."
 
-#: wp-admin/options-media.php:67 wp-admin/options-media.php:78
+#: wp-admin/options-media.php:69 wp-admin/options-media.php:80
 msgid "Max Width"
 msgstr "العرض الأقصى"
 
-#: wp-admin/options-media.php:70 wp-admin/options-media.php:81
+#: wp-admin/options-media.php:72 wp-admin/options-media.php:83
 msgid "Max Height"
 msgstr "الارتفاع الأقصى"
 
