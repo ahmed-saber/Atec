@@ -168,7 +168,19 @@ $frontpage_id = get_option('page_on_front');
     <div class="max_w">
         <div class="flex flex--middle clients_list stagger_4">
             <div class="transition">
-                <?php the_field('our_clients', $frontpage_id); ?>
+                <?php
+                $size = 'large';
+                $images = get_field('our_clients', $frontpage_id);
+                if($images):
+                ?>
+                    <ol>
+                        <?php foreach($images as $image): ?>
+                            <li>
+                                <img class="alignnone size-full" src="<?php echo $image['sizes'][$size]; ?>" alt="<?php echo $image['alt']; ?>" />
+                            </li>
+                        <?php endforeach; ?>
+                    </ol>
+                <?php endif; ?>
             </div>
         </div>
     </div>
