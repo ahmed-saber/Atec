@@ -5,7 +5,7 @@ $contentHeaderData = '
     <h1>'.get_field("title").'</h1>
     <h2 class="mb-40">'.get_field("sub_title").'</h2>
 ';
-include('content-header.php');
+include(locate_template('content-header.php',false,false));
 ?>
 <div class="block-st5">
     <div class="max_w">

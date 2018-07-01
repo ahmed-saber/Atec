@@ -5,7 +5,7 @@ $contentHeaderData = '
     <h1>'.get_field("title").'</h1>
     <h2>'.get_field("sub_title").'</h2>
 ';
-include('content-header.php');
+include(locate_template('content-header.php',false,false));
 ?>
 <section id="third_sec" class="third_sec">
     <span class="no-selection BG_text"><?php _e('Projects', 'blankslate'); ?></span>
@@ -15,7 +15,9 @@ include('content-header.php');
             <?php
             $terms = get_terms( array(
                 'taxonomy' => 'projects_types',
-                'hide_empty' => true
+                'hide_empty' => true,
+                'orderby' => 'count',
+                'order' => 'DESC',
             ) );
             foreach($terms as $term){
                 ?>
@@ -33,16 +35,16 @@ include('content-header.php');
             'posts_per_page' => -1
         );
         // QUERY:
-        $query1 = new WP_Query($args);
+        $wp_query = new WP_Query($args);
         $index = 0;
         ?>
         <?php
-        while ($query1->have_posts()) : $query1->the_post();
+        while ($wp_query->have_posts()) : $wp_query->the_post();
             $index++;
-            $terms = get_the_terms(get_the_ID(),'projects_types');
+            $terms2 = get_the_terms(get_the_ID(),'projects_types');
         ?>
-            <div class="col col--12 col__md--3 col__lg--3 element-item all <?php echo $terms[0]->slug; ?>">
-                <a data-category="<?php echo $terms[0]->slug; ?>" data-project="<?php echo $index; ?>" class="project_unit" href="<?php echo get_permalink($post->post_parent); ?>">
+            <div class="col col--12 col__md--3 col__lg--3 element-item all <?php echo $terms2[0]->slug; ?>">
+                <a data-category="<?php echo $terms2[0]->slug; ?>" data-project="<?php echo $index; ?>" class="project_unit" href="<?php echo get_permalink($post->post_parent); ?>">
                     <h3 class="proj_title transition"><?php the_title() ?></h3>
                     <span class="proj_img">
                         <img class="transition" src="<?php echo get_the_post_thumbnail_url($post->ID,'full'); ?>">
@@ -52,6 +54,9 @@ include('content-header.php');
         <?php
         endwhile;
         ?>
+    </div>
+    <div class="max_w">
+        <?php wpbeginner_numeric_posts_nav(); ?>
     </div>
 </section>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/projects.js" type="text/javascript" defer></script>

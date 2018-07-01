@@ -6,7 +6,7 @@ $contentHeaderData = '
     <h2>'.get_field("sub_title").'</h2>
     <button type="button" class="btn transition" onclick="window.location = \'#fifth_sec\'">'.__('Send Us Mail', 'blankslate').'</button>
 ';
-include('content-header.php');
+include(locate_template('content-header.php',false,false));
 ?>
 <!--second section-->
 <section class="block-st3">

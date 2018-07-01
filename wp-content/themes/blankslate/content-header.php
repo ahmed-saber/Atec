@@ -1,5 +1,5 @@
 <?php
-if ($post->post_type == 'page' && has_post_thumbnail($post->ID)){
+if (isset($post) && $post->post_type == 'page' && has_post_thumbnail($post->ID)){
     $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 }
 ?>
@@ -10,11 +10,13 @@ if ($post->post_type == 'page' && has_post_thumbnail($post->ID)){
         <span class="no-selection BG_text"><?php _e('atec', 'blankslate'); ?></span>
     </div>
     <?php
-    include('aside.php');
+    include(locate_template('aside.php',false,false));
     ?>
+    <?php if(isset($contentHeaderData)) { ?>
     <div class="title-st1">
         <?php
         echo $contentHeaderData;
         ?>
     </div>
+    <?php } ?>
 </section>

@@ -149,6 +149,8 @@ function wpbeginner_numeric_posts_nav() {
     echo '</ul></div>' . "\n";
  
 }
+
+
 // TO UPDATE THE URL
 //update_option('siteurl', 'http://127.1.1.0:9999/ahmed-zahran--atec/0-Project-Lap/');
 //update_option('home', 'http://127.1.1.0:9999/ahmed-zahran--atec/0-Project-Lap/');

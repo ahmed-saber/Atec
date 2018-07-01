@@ -3,7 +3,7 @@
 $contentHeaderData = '
     <h1>'.get_the_title().'</h1>
 ';
-include('content-header.php');
+include(locate_template('content-header.php',false,false));
 ?>
 <!--second section-->
 <section id="second_sec" class="sec second_sec">

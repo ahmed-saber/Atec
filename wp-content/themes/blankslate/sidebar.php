@@ -43,7 +43,7 @@
             ) );
             echo '<ul class="tags-st1">';
             foreach($terms as $term){
-                echo '<li><a href="'.get_term_link($term,$taxonomy_name).'">'.$term->name.'</a></li>';
+                echo '<li><a href="'.get_term_link($term,'projects_types').'">'.$term->name.'</a></li>';
             }
             echo '</ul>';
             ?>

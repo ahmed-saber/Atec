@@ -20,7 +20,7 @@ $frontpage_id = get_option('page_on_front');
     </div>
     <?php
     $slogan_txt = __('Engineering Consultancy', 'blankslate');
-    include('aside.php');
+    include(locate_template('aside.php',false,false));
     ?>
     <div class="carousel_arrows">
         <button type="button" class="slick-prev slick-arrow" aria-label="Previous" role="button"><?php _e('Previous'); ?></button>

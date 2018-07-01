@@ -6,7 +6,7 @@ $contentHeaderData = '
     <h1 class="mb-40">'.get_field("title").'</h1>
     <button type="button" class="btn transition">'.__('REQUEST QUOTE', 'blankslate').'</button>
 ';
-include('content-header.php');
+include(locate_template('content-header.php',false,false));
 ?>
 <div class="block-st4">
     <div class="max_w">

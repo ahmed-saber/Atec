@@ -1,5 +1,5 @@
 <aside class="clearfix anim1 hidden">
-    <span class="slogan"><?php echo $slogan_txt; ?></span>
+<?php if(isset($slogan_txt)){ ?><span class="slogan"><?php echo $slogan_txt; ?></span><?php } ?>
     <div class="social">
         <a href="<?php echo $GLOBALS['cgv']['instagram'] ?>" class="instagram" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">

@@ -6,7 +6,7 @@ $contentHeaderData = '
     <h2 class="mb-40">'.get_field("sub_title").'</h2>
     <button type="button" class="btn transition" onclick="window.location = \'#applyto\'">'.__('Send Your CV', 'blankslate').'</button>
 ';
-include('content-header.php');
+include(locate_template('content-header.php',false,false));
 ?>
 
 <section id="second_sec" class="sec second_sec">

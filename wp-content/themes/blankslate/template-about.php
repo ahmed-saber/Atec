@@ -6,7 +6,7 @@ $contentHeaderData = '
     <h1 class="mb-40">'.get_field("title").'</h1>
     <!--button type="button" class="btn transition">'.__('Call to Action', 'blankslate').'</button-->
 ';
-include('content-header.php');
+include(locate_template('content-header.php',false,false));
 ?>
 <!--second section-->
 <section id="second_sec" class="sec second_sec">

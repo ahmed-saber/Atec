@@ -6,7 +6,7 @@ $contentHeaderData = '
     <h2 class="mb-40">'.get_field("sub_title").'</h2>
     <!--button type="button" class="btn transition">'.__('Call to Action', 'blankslate').'</button-->
 ';
-include('content-header.php');
+include(locate_template('content-header.php',false,false));
 ?>
 <div class="block-st5">
     <div class="max_w">
@@ -38,7 +38,7 @@ include('content-header.php');
                                     if($terms){
                                         echo '<ul class="tags-st1">';
                                         foreach($terms as $term){
-                                            echo '<li><a href="'.get_term_link($term,$taxonomy_name).'">'.$term->name.'</a></li>';
+                                            echo '<li><a href="'.get_term_link($term,'projects_types').'">'.$term->name.'</a></li>';
                                         }
                                         echo '</ul>';
                                     }
