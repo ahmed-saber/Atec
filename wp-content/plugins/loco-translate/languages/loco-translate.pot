@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Loco Translate 2.1.2-dev\n"
+"Project-Id-Version: Loco Translate 2.1.4-dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 10:53+0000\n"
+"POT-Creation-Date: 2018-05-25 11:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -126,6 +126,13 @@ msgstr ""
 
 #: tpl/admin/bundle/view.php:28
 msgid "Additional files found"
+msgstr ""
+
+#: src/hooks/AdminHooks.php:69
+#, php-format
+msgid ""
+"Administrators and auditors may wish to review Loco's <a href=\"%s\">plugin "
+"privacy notice</a>."
 msgstr ""
 
 #: src/admin/bundle/BaseController.php:101
@@ -820,7 +827,7 @@ msgstr ""
 msgid "Installed languages"
 msgstr ""
 
-#: src/Locale.php:251
+#: src/Locale.php:296
 msgid "Invalid locale"
 msgstr ""
 
@@ -896,7 +903,7 @@ msgid ""
 "are many files"
 msgstr ""
 
-#: src/output/Buffer.php:84
+#: src/output/Buffer.php:80
 #, php-format
 msgid "Loco interrupted by output from %s:%u"
 msgstr ""
@@ -917,7 +924,7 @@ msgid ""
 msgstr ""
 
 #. Name of the plugin
-#: src/mvc/AdminRouter.php:37
+#: src/mvc/AdminRouter.php:37 src/hooks/AdminHooks.php:67
 msgid "Loco Translate"
 msgstr ""
 
@@ -1106,7 +1113,7 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
-#: src/mvc/AdminRouter.php:233
+#: src/mvc/AdminRouter.php:235
 msgid "Page not found"
 msgstr ""
 
@@ -1156,43 +1163,43 @@ msgid "Plugins"
 msgstr ""
 
 #. Plural category for languages that have no plurals
-#: src/Locale.php:330
+#: src/Locale.php:375
 msgctxt "Plural category"
 msgid "All forms"
 msgstr ""
 
 #. Plural category used in some multi-plural languages
-#: src/Locale.php:344
+#: src/Locale.php:389
 msgctxt "Plural category"
 msgid "Few"
 msgstr ""
 
 #. Plural category used in some multi-plural languages
-#: src/Locale.php:346
+#: src/Locale.php:391
 msgctxt "Plural category"
 msgid "Many"
 msgstr ""
 
 #. Plural category for singular quantity
-#: src/Locale.php:340
+#: src/Locale.php:385
 msgctxt "Plural category"
 msgid "One"
 msgstr ""
 
 #. General plural category not covered by other forms
-#: src/Locale.php:348
+#: src/Locale.php:393
 msgctxt "Plural category"
 msgid "Other"
 msgstr ""
 
 #. Plural category used in some multi-plural languages
-#: src/Locale.php:342
+#: src/Locale.php:387
 msgctxt "Plural category"
 msgid "Two"
 msgstr ""
 
 #. Plural category for zero quantity
-#: src/Locale.php:338
+#: src/Locale.php:383
 msgctxt "Plural category"
 msgid "Zero"
 msgstr ""
@@ -1559,6 +1566,10 @@ msgstr ""
 msgid "This page was expecting a file, but the path is actually a directory"
 msgstr ""
 
+#: src/hooks/AdminHooks.php:68
+msgid "This plugin doesn't collect any data from public website visitors."
+msgstr ""
+
 #: tpl/admin/bundle/alias.php:14
 msgid ""
 "This plugin doesn't have its own translation files, but its metadata can be "
@@ -1585,7 +1596,7 @@ msgid ""
 "the file writeable by %s"
 msgstr ""
 
-#: src/hooks/AdminHooks.php:82
+#: src/hooks/AdminHooks.php:97
 msgid "Translate"
 msgstr ""
 
