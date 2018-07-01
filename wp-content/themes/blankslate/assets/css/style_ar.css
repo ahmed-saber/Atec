@@ -60,6 +60,10 @@ a:hover {
     fill: #b7d333;
 }
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img{
     height: 100%;
 }
