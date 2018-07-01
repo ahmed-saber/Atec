@@ -16,8 +16,8 @@ include(locate_template('content-header.php',false,false));
             $terms = get_terms( array(
                 'taxonomy' => 'projects_types',
                 'hide_empty' => true,
-                'orderby' => 'count',
-                'order' => 'DESC',
+                'meta_key' => 'tax_position',
+                'orderby' => 'tax_position',
             ) );
             foreach($terms as $term){
                 ?>
