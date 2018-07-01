@@ -615,7 +615,7 @@ aside .slogan:before {
     width: 140px;
     height: 180px;
     display: block;
-    background: url(../img/logo_vertical.png) no-repeat center center scroll transparent;
+    background: url(../img/logo_vertical_en.png) no-repeat center center scroll transparent;
     background-size: 60%;
     margin: auto;
     position: relative;
@@ -1054,7 +1054,7 @@ Section five
 }
 
 .horiz_logo img {
-    width: 75%;
+    width: 60%;
 }
 
 .fifth_sec .left_content {
